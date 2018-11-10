@@ -102,6 +102,8 @@
 		26F2A1292196AE5A00841767 /* NSURL+DCHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A0CC2196AE5A00841767 /* NSURL+DCHook.m */; };
 		26F2A12A2196AE5A00841767 /* UIColor+DCColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A0D12196AE5A00841767 /* UIColor+DCColorChange.m */; };
 		26F2A12F2196B25F00841767 /* DCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A12D2196B25F00841767 /* DCUserInfo.m */; };
+		26F2A1312196D09600841767 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F2A1302196D09600841767 /* Home.storyboard */; };
+		26F2A1342196D6B200841767 /* KTShoppingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A1332196D6B200841767 /* KTShoppingVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -284,6 +286,9 @@
 		26F2A12B2196B16400841767 /* PrefixShopping.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixShopping.pch; sourceTree = "<group>"; };
 		26F2A12D2196B25F00841767 /* DCUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUserInfo.m; sourceTree = "<group>"; };
 		26F2A12E2196B25F00841767 /* DCUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUserInfo.h; sourceTree = "<group>"; };
+		26F2A1302196D09600841767 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		26F2A1322196D6B200841767 /* KTShoppingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTShoppingVC.h; sourceTree = "<group>"; };
+		26F2A1332196D6B200841767 /* KTShoppingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTShoppingVC.m; sourceTree = "<group>"; };
 		483906F411061C2B18ED7D68 /* libPods-shopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E4ADEAFB176F0898A4B18 /* Pods-shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A0CEAE4C3D0112439AA958 /* Pods-shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.release.xcconfig"; sourceTree = "<group>"; };
@@ -447,6 +452,7 @@
 		26F2A0012196AE1300841767 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				26F2A1302196D09600841767 /* Home.storyboard */,
 				26F2A0022196AE1300841767 /* Controller */,
 				26F2A0032196AE1300841767 /* Model */,
 				26F2A0042196AE1300841767 /* View */,
@@ -457,6 +463,8 @@
 		26F2A0022196AE1300841767 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				26F2A1322196D6B200841767 /* KTShoppingVC.h */,
+				26F2A1332196D6B200841767 /* KTShoppingVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -970,8 +978,8 @@
 		26F2A12C2196B25F00841767 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				26F2A12D2196B25F00841767 /* DCUserInfo.m */,
 				26F2A12E2196B25F00841767 /* DCUserInfo.h */,
+				26F2A12D2196B25F00841767 /* DCUserInfo.m */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -1051,6 +1059,7 @@
 				26F2A10E2196AE5A00841767 /* navigationbarScanBg.png in Resources */,
 				26F2A0F72196AE5A00841767 /* mask.jpg in Resources */,
 				26F2A1102196AE5A00841767 /* flash_select@2x.png in Resources */,
+				26F2A1312196D09600841767 /* Home.storyboard in Resources */,
 				26F29FE921968C0A00841767 /* Assets.xcassets in Resources */,
 				26F29FE721968C0900841767 /* Main.storyboard in Resources */,
 				26F2A1012196AE5A00841767 /* Cities.json in Resources */,
@@ -1189,6 +1198,7 @@
 				26F2A0E82196AE5A00841767 /* XWFilterAnimator.m in Sources */,
 				26F2A0F12196AE5A00841767 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				26F2A10F2196AE5A00841767 /* DCScanTool.m in Sources */,
+				26F2A1342196D6B200841767 /* KTShoppingVC.m in Sources */,
 				26F2A1002196AE5A00841767 /* AddressItem.m in Sources */,
 				26F2A0D62196AE5A00841767 /* DCLIRLButton.m in Sources */,
 				26F2A10C2196AE5A00841767 /* DCScanningViewController.m in Sources */,

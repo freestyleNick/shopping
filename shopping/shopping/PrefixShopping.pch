@@ -30,6 +30,9 @@
 #define NSLog(FORMAT, ...) nil
 #endif
 
+#define kScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
+
 #define FIT_WIDTH   [UIScreen mainScreen].bounds.size.width/375
 #define FIT_HEIGHT  [UIScreen mainScreen].bounds.size.height/667
 
