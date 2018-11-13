@@ -20,8 +20,7 @@
 #import <SDCycleScrollView.h>
 #import <FMDB.h>
 #import <TZImagePickerController.h>
-//#import <MJExtension.h>
-//#import <MJExtension.h>
+#import <MJExtension.h>
 
 
 #ifdef DEBUG
@@ -43,10 +42,21 @@
 #define KTabBarHeight    (kDevice_Is_iPhoneX ? 34.f:0.f)
 
 #define pageMenuH 40
-#define NaviH (kScreenHeight == 812 ? 88 : 64) // 812是iPhoneX的高度
+#define KNaviH (kScreenHeight == 812 ? 88 : 64) // 812是iPhoneX的高度
 #define KWaterSpace     3.0
 #define KMarginLeft     12.0
 #define KMarginRight    20.0
+
+
+
+//色值
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
+//全局背景色
+#define KTBGColor RGB(245,245,245)
+
 
 #define WEAKSELF __weak typeof(self) weakSelf = self
 #define BLOCKSELF __block typeof(self)weakSelf = self

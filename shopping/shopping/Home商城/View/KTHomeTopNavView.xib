@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KTHomeTopNavView">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-Xa-Ujq">
+                    <rect key="frame" x="0.0" y="60" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0Lt-vy-aYF"/>
+                        <constraint firstAttribute="width" constant="44" id="xk5-ex-ltE"/>
+                    </constraints>
+                    <state key="normal" image="shouye_icon_scan_white"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-bG-liX">
+                    <rect key="frame" x="430" y="60" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="DFW-nb-0IC"/>
+                        <constraint firstAttribute="height" constant="44" id="PrI-pR-Mbm"/>
+                    </constraints>
+                    <state key="normal" image="shouye_icon_sort_white"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vu-AA-8aL">
+                    <rect key="frame" x="381" y="60" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="nsI-xf-Cow"/>
+                        <constraint firstAttribute="height" constant="44" id="r6c-nC-onI"/>
+                    </constraints>
+                    <state key="normal" image="icon_gouwuche_title_white"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3D-Dq-E7R" userLabel="SearchView">
+                    <rect key="frame" x="49" y="66" width="327" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-m6-D7P">
+                            <rect key="frame" x="0.0" y="0.0" width="307" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="彩电年终内购会" image="group_home_search_gray">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuh-no-wWk">
+                            <rect key="frame" x="292" y="-1.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="hQZ-GN-ygD"/>
+                                <constraint firstAttribute="width" constant="35" id="hc9-eQ-gPj"/>
+                            </constraints>
+                            <state key="normal" image="icon_voice_search"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="cVP-m6-D7P" secondAttribute="height" id="4d6-e7-uKY"/>
+                        <constraint firstAttribute="trailing" secondItem="Tuh-no-wWk" secondAttribute="trailing" id="5fL-sd-YdP"/>
+                        <constraint firstItem="cVP-m6-D7P" firstAttribute="leading" secondItem="b3D-Dq-E7R" secondAttribute="leading" id="BAb-jf-2xo"/>
+                        <constraint firstItem="cVP-m6-D7P" firstAttribute="top" secondItem="b3D-Dq-E7R" secondAttribute="top" id="IVT-H3-OHX"/>
+                        <constraint firstItem="Tuh-no-wWk" firstAttribute="centerY" secondItem="cVP-m6-D7P" secondAttribute="centerY" id="Sxh-lC-IIC"/>
+                        <constraint firstAttribute="height" constant="32" id="k7v-mo-xKU"/>
+                        <constraint firstAttribute="trailing" secondItem="cVP-m6-D7P" secondAttribute="trailing" constant="20" id="l2H-5I-58J"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mPS-Xa-Ujq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2fu-0b-4gi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Pab-bG-liX" secondAttribute="bottom" id="Fzr-xI-Jc9"/>
+                <constraint firstItem="Pab-bG-liX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="S7N-o4-qGY"/>
+                <constraint firstItem="5Vu-AA-8aL" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="THL-Xd-oUA"/>
+                <constraint firstItem="5Vu-AA-8aL" firstAttribute="leading" secondItem="b3D-Dq-E7R" secondAttribute="trailing" constant="5" id="Thb-dn-gyM"/>
+                <constraint firstItem="Pab-bG-liX" firstAttribute="leading" secondItem="5Vu-AA-8aL" secondAttribute="trailing" constant="5" id="aCb-xk-FgG"/>
+                <constraint firstItem="b3D-Dq-E7R" firstAttribute="leading" secondItem="mPS-Xa-Ujq" secondAttribute="trailing" constant="5" id="dvU-lh-qRB"/>
+                <constraint firstItem="mPS-Xa-Ujq" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="hZb-tO-ss7"/>
+                <constraint firstItem="b3D-Dq-E7R" firstAttribute="centerY" secondItem="mPS-Xa-Ujq" secondAttribute="centerY" id="swt-hC-bgz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="179.19999999999999" y="-215.8920539730135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group_home_search_gray" width="15" height="15"/>
+        <image name="icon_gouwuche_title_white" width="44" height="44"/>
+        <image name="icon_voice_search" width="17" height="17"/>
+        <image name="shouye_icon_scan_white" width="44" height="44"/>
+        <image name="shouye_icon_sort_white" width="44" height="44"/>
+    </resources>
+</document>

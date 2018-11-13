@@ -8,6 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		0B0879CE8B787578B9B9C61E /* libPods-shopping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 483906F411061C2B18ED7D68 /* libPods-shopping.a */; };
+		266232D7219AA3F50064A87E /* KTTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232D6219AA3F50064A87E /* KTTabbar.m */; };
+		266232DB219AB22F0064A87E /* KTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232DA219AB22F0064A87E /* KTTabBarController.m */; };
+		266232DF219AB30F0064A87E /* KTBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232DE219AB30F0064A87E /* KTBaseController.m */; };
+		2662330D219AB8C20064A87E /* shareTerrace.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E3219AB8C20064A87E /* shareTerrace.plist */; };
+		2662330E219AB8C20064A87E /* ClassifyTitles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E4219AB8C20064A87E /* ClassifyTitles.plist */; };
+		2662330F219AB8C20064A87E /* DetailRecommend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E5219AB8C20064A87E /* DetailRecommend.plist */; };
+		26623310219AB8C20064A87E /* ClassiftyGoods03.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E6219AB8C20064A87E /* ClassiftyGoods03.plist */; };
+		26623311219AB8C20064A87E /* ClasiftyGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E7219AB8C20064A87E /* ClasiftyGoods.plist */; };
+		26623312219AB8C20064A87E /* ClassiftyGoods01.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E8219AB8C20064A87E /* ClassiftyGoods01.plist */; };
+		26623313219AB8C20064A87E /* ClassiftyGoods02.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232E9219AB8C20064A87E /* ClassiftyGoods02.plist */; };
+		26623314219AB8C20064A87E /* FootprintGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232EA219AB8C20064A87E /* FootprintGoods.plist */; };
+		26623315219AB8C20064A87E /* ShopItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232EB219AB8C20064A87E /* ShopItem.plist */; };
+		26623316219AB8C20064A87E /* FiltrateItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232EC219AB8C20064A87E /* FiltrateItem.plist */; };
+		26623317219AB8C20064A87E /* BeautyShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232EE219AB8C20064A87E /* BeautyShop.plist */; };
+		26623318219AB8C20064A87E /* BeautyRecommendShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232EF219AB8C20064A87E /* BeautyRecommendShop.plist */; };
+		26623319219AB8C20064A87E /* YouLikeGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F1219AB8C20064A87E /* YouLikeGoods.plist */; };
+		2662331A219AB8C20064A87E /* CommentPic.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F2219AB8C20064A87E /* CommentPic.plist */; };
+		2662331B219AB8C20064A87E /* MyCenterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F3219AB8C20064A87E /* MyCenterFlow.plist */; };
+		2662331C219AB8C20064A87E /* CommentData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F4219AB8C20064A87E /* CommentData.plist */; };
+		2662331D219AB8C20064A87E /* CommentBadData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F5219AB8C20064A87E /* CommentBadData.plist */; };
+		2662331E219AB8C20064A87E /* DeliveryAdress.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F6219AB8C20064A87E /* DeliveryAdress.plist */; };
+		2662331F219AB8C20064A87E /* MessageNote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F7219AB8C20064A87E /* MessageNote.plist */; };
+		26623320219AB8C20064A87E /* MyServiceFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232F8219AB8C20064A87E /* MyServiceFlow.plist */; };
+		26623321219AB8C20064A87E /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232FA219AB8C20064A87E /* GoodsGrid.plist */; };
+		26623322219AB8C20064A87E /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232FB219AB8C20064A87E /* HomeHighGoods.plist */; };
+		26623323219AB8C20064A87E /* CountDownShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232FC219AB8C20064A87E /* CountDownShop.plist */; };
+		26623324219AB8C20064A87E /* RecommendShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 266232FE219AB8C20064A87E /* RecommendShop.plist */; };
+		26623325219AB8C20064A87E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623300219AB8C20064A87E /* Reachability.m */; };
+		26623326219AB8C20064A87E /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623301219AB8C20064A87E /* EGOCache.m */; };
+		26623327219AB8C20064A87E /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623306219AB8C20064A87E /* RequestTool.m */; };
+		26623328219AB8C20064A87E /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623307219AB8C20064A87E /* NetworkUnit.m */; };
+		26623329219AB8C20064A87E /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26623309219AB8C20064A87E /* loading.gif */; };
+		2662332A219AB8C20064A87E /* loading2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2662330A219AB8C20064A87E /* loading2.gif */; };
+		2662332B219AB8C20064A87E /* T1cdxgB5_T1RCvBVdK.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2662330B219AB8C20064A87E /* T1cdxgB5_T1RCvBVdK.gif */; };
+		2662332C219AB8C20064A87E /* moveupAndDown@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2662330C219AB8C20064A87E /* moveupAndDown@2x.gif */; };
+		2662332F219AB9790064A87E /* KTRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2662332E219AB9790064A87E /* KTRecommendItem.m */; };
+		26623332219AB9C60064A87E /* KTGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623331219AB9C60064A87E /* KTGridItem.m */; };
+		26623335219B026B0064A87E /* KTGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623334219B026B0064A87E /* KTGoodsGridCell.m */; };
 		26F29FE121968C0900841767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F29FE021968C0900841767 /* AppDelegate.m */; };
 		26F29FE421968C0900841767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F29FE321968C0900841767 /* ViewController.m */; };
 		26F29FE721968C0900841767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F29FE521968C0900841767 /* Main.storyboard */; };
@@ -104,9 +142,59 @@
 		26F2A12F2196B25F00841767 /* DCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A12D2196B25F00841767 /* DCUserInfo.m */; };
 		26F2A1312196D09600841767 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F2A1302196D09600841767 /* Home.storyboard */; };
 		26F2A1342196D6B200841767 /* KTShoppingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A1332196D6B200841767 /* KTShoppingVC.m */; };
+		26F2A1372199AEF600841767 /* KTHomeTopNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A1362199AEF600841767 /* KTHomeTopNavView.m */; };
+		26F2A1392199AF0300841767 /* KTHomeTopNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		266232D5219AA3F50064A87E /* KTTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTabbar.h; sourceTree = "<group>"; };
+		266232D6219AA3F50064A87E /* KTTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTTabbar.m; sourceTree = "<group>"; };
+		266232D9219AB22F0064A87E /* KTTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTabBarController.h; sourceTree = "<group>"; };
+		266232DA219AB22F0064A87E /* KTTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTTabBarController.m; sourceTree = "<group>"; };
+		266232DD219AB30F0064A87E /* KTBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTBaseController.h; sourceTree = "<group>"; };
+		266232DE219AB30F0064A87E /* KTBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTBaseController.m; sourceTree = "<group>"; };
+		266232E3219AB8C20064A87E /* shareTerrace.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shareTerrace.plist; sourceTree = "<group>"; };
+		266232E4219AB8C20064A87E /* ClassifyTitles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassifyTitles.plist; sourceTree = "<group>"; };
+		266232E5219AB8C20064A87E /* DetailRecommend.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DetailRecommend.plist; sourceTree = "<group>"; };
+		266232E6219AB8C20064A87E /* ClassiftyGoods03.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassiftyGoods03.plist; sourceTree = "<group>"; };
+		266232E7219AB8C20064A87E /* ClasiftyGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClasiftyGoods.plist; sourceTree = "<group>"; };
+		266232E8219AB8C20064A87E /* ClassiftyGoods01.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassiftyGoods01.plist; sourceTree = "<group>"; };
+		266232E9219AB8C20064A87E /* ClassiftyGoods02.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassiftyGoods02.plist; sourceTree = "<group>"; };
+		266232EA219AB8C20064A87E /* FootprintGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FootprintGoods.plist; sourceTree = "<group>"; };
+		266232EB219AB8C20064A87E /* ShopItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopItem.plist; sourceTree = "<group>"; };
+		266232EC219AB8C20064A87E /* FiltrateItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FiltrateItem.plist; sourceTree = "<group>"; };
+		266232EE219AB8C20064A87E /* BeautyShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BeautyShop.plist; sourceTree = "<group>"; };
+		266232EF219AB8C20064A87E /* BeautyRecommendShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BeautyRecommendShop.plist; sourceTree = "<group>"; };
+		266232F1219AB8C20064A87E /* YouLikeGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YouLikeGoods.plist; sourceTree = "<group>"; };
+		266232F2219AB8C20064A87E /* CommentPic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommentPic.plist; sourceTree = "<group>"; };
+		266232F3219AB8C20064A87E /* MyCenterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyCenterFlow.plist; sourceTree = "<group>"; };
+		266232F4219AB8C20064A87E /* CommentData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommentData.plist; sourceTree = "<group>"; };
+		266232F5219AB8C20064A87E /* CommentBadData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CommentBadData.plist; sourceTree = "<group>"; };
+		266232F6219AB8C20064A87E /* DeliveryAdress.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeliveryAdress.plist; sourceTree = "<group>"; };
+		266232F7219AB8C20064A87E /* MessageNote.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MessageNote.plist; sourceTree = "<group>"; };
+		266232F8219AB8C20064A87E /* MyServiceFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyServiceFlow.plist; sourceTree = "<group>"; };
+		266232FA219AB8C20064A87E /* GoodsGrid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GoodsGrid.plist; sourceTree = "<group>"; };
+		266232FB219AB8C20064A87E /* HomeHighGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomeHighGoods.plist; sourceTree = "<group>"; };
+		266232FC219AB8C20064A87E /* CountDownShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountDownShop.plist; sourceTree = "<group>"; };
+		266232FE219AB8C20064A87E /* RecommendShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RecommendShop.plist; sourceTree = "<group>"; };
+		26623300219AB8C20064A87E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		26623301219AB8C20064A87E /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		26623302219AB8C20064A87E /* NetworkUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
+		26623303219AB8C20064A87E /* RequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTool.h; sourceTree = "<group>"; };
+		26623304219AB8C20064A87E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		26623305219AB8C20064A87E /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		26623306219AB8C20064A87E /* RequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
+		26623307219AB8C20064A87E /* NetworkUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUnit.m; sourceTree = "<group>"; };
+		26623309219AB8C20064A87E /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		2662330A219AB8C20064A87E /* loading2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading2.gif; sourceTree = "<group>"; };
+		2662330B219AB8C20064A87E /* T1cdxgB5_T1RCvBVdK.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = T1cdxgB5_T1RCvBVdK.gif; sourceTree = "<group>"; };
+		2662330C219AB8C20064A87E /* moveupAndDown@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "moveupAndDown@2x.gif"; sourceTree = "<group>"; };
+		2662332D219AB9790064A87E /* KTRecommendItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTRecommendItem.h; sourceTree = "<group>"; };
+		2662332E219AB9790064A87E /* KTRecommendItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTRecommendItem.m; sourceTree = "<group>"; };
+		26623330219AB9C60064A87E /* KTGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGridItem.h; sourceTree = "<group>"; };
+		26623331219AB9C60064A87E /* KTGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGridItem.m; sourceTree = "<group>"; };
+		26623333219B026B0064A87E /* KTGoodsGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsGridCell.h; sourceTree = "<group>"; };
+		26623334219B026B0064A87E /* KTGoodsGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsGridCell.m; sourceTree = "<group>"; };
 		26F29FDC21968C0900841767 /* shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F29FDF21968C0900841767 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26F29FE021968C0900841767 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -289,6 +377,9 @@
 		26F2A1302196D09600841767 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		26F2A1322196D6B200841767 /* KTShoppingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTShoppingVC.h; sourceTree = "<group>"; };
 		26F2A1332196D6B200841767 /* KTShoppingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTShoppingVC.m; sourceTree = "<group>"; };
+		26F2A1352199AEF600841767 /* KTHomeTopNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTHomeTopNavView.h; sourceTree = "<group>"; };
+		26F2A1362199AEF600841767 /* KTHomeTopNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTHomeTopNavView.m; sourceTree = "<group>"; };
+		26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTHomeTopNavView.xib; sourceTree = "<group>"; };
 		483906F411061C2B18ED7D68 /* libPods-shopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E4ADEAFB176F0898A4B18 /* Pods-shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A0CEAE4C3D0112439AA958 /* Pods-shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.release.xcconfig"; sourceTree = "<group>"; };
@@ -312,6 +403,126 @@
 				483906F411061C2B18ED7D68 /* libPods-shopping.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		266232DC219AB2C70064A87E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				266232D9219AB22F0064A87E /* KTTabBarController.h */,
+				266232DA219AB22F0064A87E /* KTTabBarController.m */,
+				266232DD219AB30F0064A87E /* KTBaseController.h */,
+				266232DE219AB30F0064A87E /* KTBaseController.m */,
+				266232D5219AA3F50064A87E /* KTTabbar.h */,
+				266232D6219AA3F50064A87E /* KTTabbar.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		266232E0219AB8C20064A87E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				266232E1219AB8C20064A87E /* Plist */,
+				266232FF219AB8C20064A87E /* RequestTool */,
+				26623308219AB8C20064A87E /* GIF */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		266232E1219AB8C20064A87E /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				266232E2219AB8C20064A87E /* 分类Plist */,
+				266232ED219AB8C20064A87E /* 美店 */,
+				266232F0219AB8C20064A87E /* 我的Plist */,
+				266232F9219AB8C20064A87E /* 首页Plist */,
+				266232FD219AB8C20064A87E /* 购物车Plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		266232E2219AB8C20064A87E /* 分类Plist */ = {
+			isa = PBXGroup;
+			children = (
+				266232E3219AB8C20064A87E /* shareTerrace.plist */,
+				266232E4219AB8C20064A87E /* ClassifyTitles.plist */,
+				266232E5219AB8C20064A87E /* DetailRecommend.plist */,
+				266232E6219AB8C20064A87E /* ClassiftyGoods03.plist */,
+				266232E7219AB8C20064A87E /* ClasiftyGoods.plist */,
+				266232E8219AB8C20064A87E /* ClassiftyGoods01.plist */,
+				266232E9219AB8C20064A87E /* ClassiftyGoods02.plist */,
+				266232EA219AB8C20064A87E /* FootprintGoods.plist */,
+				266232EB219AB8C20064A87E /* ShopItem.plist */,
+				266232EC219AB8C20064A87E /* FiltrateItem.plist */,
+			);
+			path = "分类Plist";
+			sourceTree = "<group>";
+		};
+		266232ED219AB8C20064A87E /* 美店 */ = {
+			isa = PBXGroup;
+			children = (
+				266232EE219AB8C20064A87E /* BeautyShop.plist */,
+				266232EF219AB8C20064A87E /* BeautyRecommendShop.plist */,
+			);
+			path = "美店";
+			sourceTree = "<group>";
+		};
+		266232F0219AB8C20064A87E /* 我的Plist */ = {
+			isa = PBXGroup;
+			children = (
+				266232F1219AB8C20064A87E /* YouLikeGoods.plist */,
+				266232F2219AB8C20064A87E /* CommentPic.plist */,
+				266232F3219AB8C20064A87E /* MyCenterFlow.plist */,
+				266232F4219AB8C20064A87E /* CommentData.plist */,
+				266232F5219AB8C20064A87E /* CommentBadData.plist */,
+				266232F6219AB8C20064A87E /* DeliveryAdress.plist */,
+				266232F7219AB8C20064A87E /* MessageNote.plist */,
+				266232F8219AB8C20064A87E /* MyServiceFlow.plist */,
+			);
+			path = "我的Plist";
+			sourceTree = "<group>";
+		};
+		266232F9219AB8C20064A87E /* 首页Plist */ = {
+			isa = PBXGroup;
+			children = (
+				266232FA219AB8C20064A87E /* GoodsGrid.plist */,
+				266232FB219AB8C20064A87E /* HomeHighGoods.plist */,
+				266232FC219AB8C20064A87E /* CountDownShop.plist */,
+			);
+			path = "首页Plist";
+			sourceTree = "<group>";
+		};
+		266232FD219AB8C20064A87E /* 购物车Plist */ = {
+			isa = PBXGroup;
+			children = (
+				266232FE219AB8C20064A87E /* RecommendShop.plist */,
+			);
+			path = "购物车Plist";
+			sourceTree = "<group>";
+		};
+		266232FF219AB8C20064A87E /* RequestTool */ = {
+			isa = PBXGroup;
+			children = (
+				26623300219AB8C20064A87E /* Reachability.m */,
+				26623301219AB8C20064A87E /* EGOCache.m */,
+				26623302219AB8C20064A87E /* NetworkUnit.h */,
+				26623303219AB8C20064A87E /* RequestTool.h */,
+				26623304219AB8C20064A87E /* Reachability.h */,
+				26623305219AB8C20064A87E /* EGOCache.h */,
+				26623306219AB8C20064A87E /* RequestTool.m */,
+				26623307219AB8C20064A87E /* NetworkUnit.m */,
+			);
+			path = RequestTool;
+			sourceTree = "<group>";
+		};
+		26623308219AB8C20064A87E /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				26623309219AB8C20064A87E /* loading.gif */,
+				2662330A219AB8C20064A87E /* loading2.gif */,
+				2662330B219AB8C20064A87E /* T1cdxgB5_T1RCvBVdK.gif */,
+				2662330C219AB8C20064A87E /* moveupAndDown@2x.gif */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 		26F29FD321968C0900841767 = {
@@ -338,10 +549,12 @@
 				26F2A12C2196B25F00841767 /* UserInfo */,
 				26F2A0092196AE5A00841767 /* Expand(扩展) */,
 				26F2A0052196AE1B00841767 /* BeautyMessage */,
-				26F2A0012196AE1300841767 /* Home */,
+				26F2A0012196AE1300841767 /* Home商城 */,
+				266232DC219AB2C70064A87E /* Main */,
 				26F29FFD2196AE0A00841767 /* MediaList */,
 				26F29FF92196ADF900841767 /* BeautyStore */,
 				26F29FF52196AD6500841767 /* Mine */,
+				266232E0219AB8C20064A87E /* Resource */,
 				26F29FDF21968C0900841767 /* AppDelegate.h */,
 				26F29FE021968C0900841767 /* AppDelegate.m */,
 				26F29FE221968C0900841767 /* ViewController.h */,
@@ -449,7 +662,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		26F2A0012196AE1300841767 /* Home */ = {
+		26F2A0012196AE1300841767 /* Home商城 */ = {
 			isa = PBXGroup;
 			children = (
 				26F2A1302196D09600841767 /* Home.storyboard */,
@@ -457,7 +670,7 @@
 				26F2A0032196AE1300841767 /* Model */,
 				26F2A0042196AE1300841767 /* View */,
 			);
-			path = Home;
+			path = "Home商城";
 			sourceTree = "<group>";
 		};
 		26F2A0022196AE1300841767 /* Controller */ = {
@@ -472,6 +685,10 @@
 		26F2A0032196AE1300841767 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2662332D219AB9790064A87E /* KTRecommendItem.h */,
+				2662332E219AB9790064A87E /* KTRecommendItem.m */,
+				26623330219AB9C60064A87E /* KTGridItem.h */,
+				26623331219AB9C60064A87E /* KTGridItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -479,6 +696,11 @@
 		26F2A0042196AE1300841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				26F2A1352199AEF600841767 /* KTHomeTopNavView.h */,
+				26F2A1362199AEF600841767 /* KTHomeTopNavView.m */,
+				26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */,
+				26623333219B026B0064A87E /* KTGoodsGridCell.h */,
+				26623334219B026B0064A87E /* KTGoodsGridCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1052,19 +1274,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26623311219AB8C20064A87E /* ClasiftyGoods.plist in Resources */,
+				26623315219AB8C20064A87E /* ShopItem.plist in Resources */,
+				2662331D219AB8C20064A87E /* CommentBadData.plist in Resources */,
 				26F29FEC21968C0A00841767 /* LaunchScreen.storyboard in Resources */,
 				26F2A1032196AE5A00841767 /* AddressTableViewCell.xib in Resources */,
+				2662332A219AB8C20064A87E /* loading2.gif in Resources */,
 				26F2A1132196AE5A00841767 /* sqr_line@2x.png in Resources */,
 				26F2A10D2196AE5A00841767 /* flsah_normal@2x.png in Resources */,
+				26623320219AB8C20064A87E /* MyServiceFlow.plist in Resources */,
+				2662330E219AB8C20064A87E /* ClassifyTitles.plist in Resources */,
+				2662331E219AB8C20064A87E /* DeliveryAdress.plist in Resources */,
 				26F2A10E2196AE5A00841767 /* navigationbarScanBg.png in Resources */,
+				26623317219AB8C20064A87E /* BeautyShop.plist in Resources */,
+				26623318219AB8C20064A87E /* BeautyRecommendShop.plist in Resources */,
+				2662332C219AB8C20064A87E /* moveupAndDown@2x.gif in Resources */,
+				26623319219AB8C20064A87E /* YouLikeGoods.plist in Resources */,
+				26623324219AB8C20064A87E /* RecommendShop.plist in Resources */,
+				2662330F219AB8C20064A87E /* DetailRecommend.plist in Resources */,
+				26623321219AB8C20064A87E /* GoodsGrid.plist in Resources */,
+				2662330D219AB8C20064A87E /* shareTerrace.plist in Resources */,
+				2662331B219AB8C20064A87E /* MyCenterFlow.plist in Resources */,
+				26623312219AB8C20064A87E /* ClassiftyGoods01.plist in Resources */,
+				26F2A1392199AF0300841767 /* KTHomeTopNavView.xib in Resources */,
 				26F2A0F72196AE5A00841767 /* mask.jpg in Resources */,
+				2662331C219AB8C20064A87E /* CommentData.plist in Resources */,
+				26623313219AB8C20064A87E /* ClassiftyGoods02.plist in Resources */,
+				26623316219AB8C20064A87E /* FiltrateItem.plist in Resources */,
+				26623310219AB8C20064A87E /* ClassiftyGoods03.plist in Resources */,
 				26F2A1102196AE5A00841767 /* flash_select@2x.png in Resources */,
+				26623314219AB8C20064A87E /* FootprintGoods.plist in Resources */,
 				26F2A1312196D09600841767 /* Home.storyboard in Resources */,
+				26623322219AB8C20064A87E /* HomeHighGoods.plist in Resources */,
 				26F29FE921968C0A00841767 /* Assets.xcassets in Resources */,
+				2662331A219AB8C20064A87E /* CommentPic.plist in Resources */,
 				26F29FE721968C0900841767 /* Main.storyboard in Resources */,
 				26F2A1012196AE5A00841767 /* Cities.json in Resources */,
 				26F2A0FC2196AE5A00841767 /* addressData.plist in Resources */,
+				2662332B219AB8C20064A87E /* T1cdxgB5_T1RCvBVdK.gif in Resources */,
+				26623323219AB8C20064A87E /* CountDownShop.plist in Resources */,
 				26F2A0F52196AE5A00841767 /* line.png in Resources */,
+				26623329219AB8C20064A87E /* loading.gif in Resources */,
+				2662331F219AB8C20064A87E /* MessageNote.plist in Resources */,
 				26F2A0F62196AE5A00841767 /* restrictedshine.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1133,8 +1384,10 @@
 				26F2A0DE2196AE5A00841767 /* SDPhotoBrowser.m in Sources */,
 				26F2A0EC2196AE5A00841767 /* XWCoolAnimator+XWScanning.m in Sources */,
 				26F2A0DD2196AE5A00841767 /* UIViewController+XWTransition.m in Sources */,
+				26623335219B026B0064A87E /* KTGoodsGridCell.m in Sources */,
 				26F2A0D42196AE5A00841767 /* DCNotificationCenterName.m in Sources */,
 				26F2A11D2196AE5A00841767 /* DCSpeedy.m in Sources */,
+				26623328219AB8C20064A87E /* NetworkUnit.m in Sources */,
 				26F2A0DF2196AE5A00841767 /* SDWaitingView.m in Sources */,
 				26F2A1242196AE5A00841767 /* UILabel+DCLabel.m in Sources */,
 				26F2A0F02196AE5A00841767 /* XWCoolAnimator+XWFold.m in Sources */,
@@ -1167,19 +1420,26 @@
 				26F2A0E42196AE5A00841767 /* XWFilterAnimator+XWRipple.m in Sources */,
 				26F2A0DC2196AE5A00841767 /* UINavigationController+XWTransition.m in Sources */,
 				26F2A1042196AE5A00841767 /* AddressView.m in Sources */,
+				26623332219AB9C60064A87E /* KTGridItem.m in Sources */,
 				26F2A11C2196AE5A00841767 /* DCKeepNewUserData.m in Sources */,
 				26F2A1212196AE5A00841767 /* DCPlaceholderTextView.m in Sources */,
+				266232D7219AA3F50064A87E /* KTTabbar.m in Sources */,
 				26F2A0F42196AE5A00841767 /* XWMagicMoveAnimator.m in Sources */,
 				26F2A0ED2196AE5A00841767 /* XWCoolAnimator.m in Sources */,
 				26F2A0F82196AE5A00841767 /* XWInteractiveTransition.m in Sources */,
+				26623326219AB8C20064A87E /* EGOCache.m in Sources */,
 				26F2A1072196AE5A00841767 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				266232DF219AB30F0064A87E /* KTBaseController.m in Sources */,
 				26F2A0EA2196AE5A00841767 /* XWFilterTransitionView.m in Sources */,
 				26F2A10B2196AE5A00841767 /* JKDBHelper.m in Sources */,
 				26F2A1282196AE5A00841767 /* UIImage+DCCircle.m in Sources */,
 				26F2A12A2196AE5A00841767 /* UIColor+DCColorChange.m in Sources */,
+				266232DB219AB22F0064A87E /* KTTabBarController.m in Sources */,
 				26F2A11B2196AE5A00841767 /* CDDTopTip.m in Sources */,
+				26623327219AB8C20064A87E /* RequestTool.m in Sources */,
 				26F2A1172196AE5A00841767 /* YBPopupMenuPath.m in Sources */,
 				26F2A0FB2196AE5A00841767 /* XWDrawerAnimator.m in Sources */,
+				26F2A1372199AEF600841767 /* KTHomeTopNavView.m in Sources */,
 				26F29FE121968C0900841767 /* AppDelegate.m in Sources */,
 				26F2A1082196AE5A00841767 /* DCTitleRolling.m in Sources */,
 				26F2A0E32196AE5A00841767 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
@@ -1198,7 +1458,9 @@
 				26F2A0E82196AE5A00841767 /* XWFilterAnimator.m in Sources */,
 				26F2A0F12196AE5A00841767 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				26F2A10F2196AE5A00841767 /* DCScanTool.m in Sources */,
+				2662332F219AB9790064A87E /* KTRecommendItem.m in Sources */,
 				26F2A1342196D6B200841767 /* KTShoppingVC.m in Sources */,
+				26623325219AB8C20064A87E /* Reachability.m in Sources */,
 				26F2A1002196AE5A00841767 /* AddressItem.m in Sources */,
 				26F2A0D62196AE5A00841767 /* DCLIRLButton.m in Sources */,
 				26F2A10C2196AE5A00841767 /* DCScanningViewController.m in Sources */,
