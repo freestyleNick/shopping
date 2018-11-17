@@ -42,7 +42,10 @@
 #define KTabBarHeight    (kDevice_Is_iPhoneX ? 34.f:0.f)
 
 #define pageMenuH 40
-#define KNaviH (kScreenHeight == 812 ? 88 : 64) // 812是iPhoneX的高度
+#define KStatusH (kScreenHeight >= 812 ? 44 : 20) // 812是iPhoneX的高度
+#define KNaviH (kScreenHeight >= 812 ? 88 : 64) // 812是iPhoneX的高度
+#define KTabBarH (kScreenHeight >= 812 ? 34.f:0.f) // 812是iPhoneX的高度
+
 #define KWaterSpace     3.0
 #define KMarginLeft     12.0
 #define KMarginRight    20.0

@@ -66,6 +66,7 @@
 
 #define GoodsBeautySilderImagesArray @[@"http://gfs8.gomein.net.cn/T1QtA_BXdT1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1__ZvB7Aj1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1SZ__B5VT1RCvBVdK.jpg"]
 
+//商城最上面的滚动视图URL数组
 #define GoodsHomeSilderImagesArray @[@"http://gfs5.gomein.net.cn/T1obZ_BmLT1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1C3J_B5LT1RCvBVdK.jpg",@"http://gfs5.gomein.net.cn/T1CwYjBCCT1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1u8V_B4ET1RCvBVdK.jpg",@"http://gfs7.gomein.net.cn/T1zODgB5CT1RCvBVdK.jpg"]
 
 #define GoodsFooterImagesArray @[@"http://gfs5.gomein.net.cn/T1vpK_BCZT1RCvBVdK.jpg",@"http://gfs9.gomein.net.cn/T1cGK_BCZT1RCvBVdK.jpg",@"http://gfs6.gomein.net.cn/T1Kod_BCxT1RCvBVdK.jpg"]

@@ -11,6 +11,7 @@
 @interface UIColor (DCColorChange)
 
 #pragma mark - 十六进制颜色
+/** 十六进制颜色 */
 + (UIColor *)dc_colorWithHexString:(NSString *)color;
 
 

@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+//10个item数据
+
 @interface KTGridItem : NSObject
 /** 图片  */
 @property (nonatomic, copy ,readonly) NSString *iconImage;

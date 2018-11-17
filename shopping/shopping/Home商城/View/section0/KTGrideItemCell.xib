@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KTGrideItemCellID" id="gTV-IL-0wX" customClass="KTGrideItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_49_11" translatesAutoresizingMaskIntoConstraints="NO" id="dZS-VS-ycR">
+                        <rect key="frame" x="58.5" y="10" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="ktp-fo-GyT"/>
+                            <constraint firstAttribute="height" constant="45" id="p0i-xR-a9A"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aof-ae-5I9">
+                        <rect key="frame" x="69.5" y="60" width="23" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-s9-yn6">
+                        <rect key="frame" x="81" y="10" width="35" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="gNN-d6-tRN"/>
+                            <constraint firstAttribute="width" constant="35" id="rwM-Km-7Vd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aof-ae-5I9" firstAttribute="centerX" secondItem="dZS-VS-ycR" secondAttribute="centerX" id="BMk-6W-snH"/>
+                <constraint firstItem="Ehp-s9-yn6" firstAttribute="top" secondItem="dZS-VS-ycR" secondAttribute="top" id="M8w-7y-wu0"/>
+                <constraint firstItem="Ehp-s9-yn6" firstAttribute="leading" secondItem="dZS-VS-ycR" secondAttribute="leading" constant="22.5" id="Ogq-C8-WOd"/>
+                <constraint firstItem="aof-ae-5I9" firstAttribute="top" secondItem="dZS-VS-ycR" secondAttribute="bottom" constant="5" id="aYi-DQ-HAe"/>
+                <constraint firstItem="dZS-VS-ycR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="t1C-Zp-edU"/>
+                <constraint firstItem="dZS-VS-ycR" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="yIo-Fz-Oib"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="162" height="136"/>
+            <connections>
+                <outlet property="itemImage" destination="dZS-VS-ycR" id="6Ux-ix-vuC"/>
+                <outlet property="itemTag" destination="Ehp-s9-yn6" id="lLG-5b-tbc"/>
+                <outlet property="itemTitle" destination="aof-ae-5I9" id="d6Y-wv-R54"/>
+            </connections>
+            <point key="canvasLocation" x="-35.200000000000003" y="165.51724137931035"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default_49_11" width="49" height="11"/>
+    </resources>
+</document>

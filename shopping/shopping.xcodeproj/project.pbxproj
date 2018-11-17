@@ -45,7 +45,14 @@
 		2662332C219AB8C20064A87E /* moveupAndDown@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2662330C219AB8C20064A87E /* moveupAndDown@2x.gif */; };
 		2662332F219AB9790064A87E /* KTRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2662332E219AB9790064A87E /* KTRecommendItem.m */; };
 		26623332219AB9C60064A87E /* KTGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623331219AB9C60064A87E /* KTGridItem.m */; };
-		26623335219B026B0064A87E /* KTGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26623334219B026B0064A87E /* KTGoodsGridCell.m */; };
+		268FF90A219C037C002F7A32 /* KTCycleTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF909219C037C002F7A32 /* KTCycleTopView.m */; };
+		268FF913219D1434002F7A32 /* KTGrideItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF911219D1434002F7A32 /* KTGrideItemCell.m */; };
+		268FF914219D1434002F7A32 /* KTGrideItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 268FF912219D1434002F7A32 /* KTGrideItemCell.xib */; };
+		268FF917219E6891002F7A32 /* KTTopLineFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF916219E6891002F7A32 /* KTTopLineFootView.m */; };
+		268FF91A219EB020002F7A32 /* KTNewWelfareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF919219EB020002F7A32 /* KTNewWelfareCell.m */; };
+		268FF91D219EF0B5002F7A32 /* KTNewWelfareLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF91C219EF0B5002F7A32 /* KTNewWelfareLayout.m */; };
+		268FF923219EF444002F7A32 /* KTGoodsHandheldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF921219EF444002F7A32 /* KTGoodsHandheldCell.m */; };
+		268FF924219EF444002F7A32 /* KTGoodsHandheldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 268FF922219EF444002F7A32 /* KTGoodsHandheldCell.xib */; };
 		26F29FE121968C0900841767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F29FE021968C0900841767 /* AppDelegate.m */; };
 		26F29FE421968C0900841767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F29FE321968C0900841767 /* ViewController.m */; };
 		26F29FE721968C0900841767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F29FE521968C0900841767 /* Main.storyboard */; };
@@ -193,8 +200,20 @@
 		2662332E219AB9790064A87E /* KTRecommendItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTRecommendItem.m; sourceTree = "<group>"; };
 		26623330219AB9C60064A87E /* KTGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGridItem.h; sourceTree = "<group>"; };
 		26623331219AB9C60064A87E /* KTGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGridItem.m; sourceTree = "<group>"; };
-		26623333219B026B0064A87E /* KTGoodsGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsGridCell.h; sourceTree = "<group>"; };
-		26623334219B026B0064A87E /* KTGoodsGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsGridCell.m; sourceTree = "<group>"; };
+		268FF908219C037C002F7A32 /* KTCycleTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTCycleTopView.h; sourceTree = "<group>"; };
+		268FF909219C037C002F7A32 /* KTCycleTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTCycleTopView.m; sourceTree = "<group>"; };
+		268FF910219D1434002F7A32 /* KTGrideItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGrideItemCell.h; sourceTree = "<group>"; };
+		268FF911219D1434002F7A32 /* KTGrideItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGrideItemCell.m; sourceTree = "<group>"; };
+		268FF912219D1434002F7A32 /* KTGrideItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGrideItemCell.xib; sourceTree = "<group>"; };
+		268FF915219E6891002F7A32 /* KTTopLineFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTopLineFootView.h; sourceTree = "<group>"; };
+		268FF916219E6891002F7A32 /* KTTopLineFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTTopLineFootView.m; sourceTree = "<group>"; };
+		268FF918219EB020002F7A32 /* KTNewWelfareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTNewWelfareCell.h; sourceTree = "<group>"; };
+		268FF919219EB020002F7A32 /* KTNewWelfareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTNewWelfareCell.m; sourceTree = "<group>"; };
+		268FF91B219EF0B5002F7A32 /* KTNewWelfareLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTNewWelfareLayout.h; sourceTree = "<group>"; };
+		268FF91C219EF0B5002F7A32 /* KTNewWelfareLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTNewWelfareLayout.m; sourceTree = "<group>"; };
+		268FF920219EF444002F7A32 /* KTGoodsHandheldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsHandheldCell.h; sourceTree = "<group>"; };
+		268FF921219EF444002F7A32 /* KTGoodsHandheldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsHandheldCell.m; sourceTree = "<group>"; };
+		268FF922219EF444002F7A32 /* KTGoodsHandheldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGoodsHandheldCell.xib; sourceTree = "<group>"; };
 		26F29FDC21968C0900841767 /* shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F29FDF21968C0900841767 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26F29FE021968C0900841767 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -525,6 +544,34 @@
 			path = GIF;
 			sourceTree = "<group>";
 		};
+		268FF91E219EF2E2002F7A32 /* section0 */ = {
+			isa = PBXGroup;
+			children = (
+				268FF908219C037C002F7A32 /* KTCycleTopView.h */,
+				268FF909219C037C002F7A32 /* KTCycleTopView.m */,
+				268FF910219D1434002F7A32 /* KTGrideItemCell.h */,
+				268FF911219D1434002F7A32 /* KTGrideItemCell.m */,
+				268FF912219D1434002F7A32 /* KTGrideItemCell.xib */,
+				268FF915219E6891002F7A32 /* KTTopLineFootView.h */,
+				268FF916219E6891002F7A32 /* KTTopLineFootView.m */,
+			);
+			path = section0;
+			sourceTree = "<group>";
+		};
+		268FF91F219EF32B002F7A32 /* section1 */ = {
+			isa = PBXGroup;
+			children = (
+				268FF918219EB020002F7A32 /* KTNewWelfareCell.h */,
+				268FF919219EB020002F7A32 /* KTNewWelfareCell.m */,
+				268FF91B219EF0B5002F7A32 /* KTNewWelfareLayout.h */,
+				268FF91C219EF0B5002F7A32 /* KTNewWelfareLayout.m */,
+				268FF920219EF444002F7A32 /* KTGoodsHandheldCell.h */,
+				268FF921219EF444002F7A32 /* KTGoodsHandheldCell.m */,
+				268FF922219EF444002F7A32 /* KTGoodsHandheldCell.xib */,
+			);
+			path = section1;
+			sourceTree = "<group>";
+		};
 		26F29FD321968C0900841767 = {
 			isa = PBXGroup;
 			children = (
@@ -685,10 +732,10 @@
 		26F2A0032196AE1300841767 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2662332D219AB9790064A87E /* KTRecommendItem.h */,
-				2662332E219AB9790064A87E /* KTRecommendItem.m */,
 				26623330219AB9C60064A87E /* KTGridItem.h */,
 				26623331219AB9C60064A87E /* KTGridItem.m */,
+				2662332D219AB9790064A87E /* KTRecommendItem.h */,
+				2662332E219AB9790064A87E /* KTRecommendItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -696,11 +743,11 @@
 		26F2A0042196AE1300841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				268FF91F219EF32B002F7A32 /* section1 */,
+				268FF91E219EF2E2002F7A32 /* section0 */,
 				26F2A1352199AEF600841767 /* KTHomeTopNavView.h */,
 				26F2A1362199AEF600841767 /* KTHomeTopNavView.m */,
 				26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */,
-				26623333219B026B0064A87E /* KTGoodsGridCell.h */,
-				26623334219B026B0064A87E /* KTGoodsGridCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1291,6 +1338,8 @@
 				2662332C219AB8C20064A87E /* moveupAndDown@2x.gif in Resources */,
 				26623319219AB8C20064A87E /* YouLikeGoods.plist in Resources */,
 				26623324219AB8C20064A87E /* RecommendShop.plist in Resources */,
+				268FF924219EF444002F7A32 /* KTGoodsHandheldCell.xib in Resources */,
+				268FF914219D1434002F7A32 /* KTGrideItemCell.xib in Resources */,
 				2662330F219AB8C20064A87E /* DetailRecommend.plist in Resources */,
 				26623321219AB8C20064A87E /* GoodsGrid.plist in Resources */,
 				2662330D219AB8C20064A87E /* shareTerrace.plist in Resources */,
@@ -1373,23 +1422,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F2A1222196AE5A00841767 /* DCSelPhotos.m in Sources */,
+				268FF923219EF444002F7A32 /* KTGoodsHandheldCell.m in Sources */,
 				26F2A0D52196AE5A00841767 /* DCConsts.m in Sources */,
 				26F2A1202196AE5A00841767 /* Foundation+Log.m in Sources */,
 				26F29FE421968C0900841767 /* ViewController.m in Sources */,
 				26F2A1052196AE5A00841767 /* AddressTableViewCell.m in Sources */,
 				26F2A11F2196AE5A00841767 /* DCObjManager.m in Sources */,
 				26F2A0EB2196AE5A00841767 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
+				268FF917219E6891002F7A32 /* KTTopLineFootView.m in Sources */,
 				26F2A1092196AE5A00841767 /* UIView+DCRolling.m in Sources */,
 				26F2A12F2196B25F00841767 /* DCUserInfo.m in Sources */,
 				26F2A0DE2196AE5A00841767 /* SDPhotoBrowser.m in Sources */,
 				26F2A0EC2196AE5A00841767 /* XWCoolAnimator+XWScanning.m in Sources */,
 				26F2A0DD2196AE5A00841767 /* UIViewController+XWTransition.m in Sources */,
-				26623335219B026B0064A87E /* KTGoodsGridCell.m in Sources */,
 				26F2A0D42196AE5A00841767 /* DCNotificationCenterName.m in Sources */,
 				26F2A11D2196AE5A00841767 /* DCSpeedy.m in Sources */,
 				26623328219AB8C20064A87E /* NetworkUnit.m in Sources */,
 				26F2A0DF2196AE5A00841767 /* SDWaitingView.m in Sources */,
 				26F2A1242196AE5A00841767 /* UILabel+DCLabel.m in Sources */,
+				268FF90A219C037C002F7A32 /* KTCycleTopView.m in Sources */,
 				26F2A0F02196AE5A00841767 /* XWCoolAnimator+XWFold.m in Sources */,
 				26F2A0D92196AE5A00841767 /* DCCustionButton.m in Sources */,
 				26F2A0EF2196AE5A00841767 /* XWCoolAnimator+XWExplode.m in Sources */,
@@ -1399,8 +1450,10 @@
 				26F2A0FF2196AE5A00841767 /* UIView+Frame.m in Sources */,
 				26F2A0DB2196AE5A00841767 /* UIView+Snapshot.m in Sources */,
 				26F2A11E2196AE5A00841767 /* DCCheckRegular.m in Sources */,
+				268FF91A219EB020002F7A32 /* KTNewWelfareCell.m in Sources */,
 				26F2A0E52196AE5A00841767 /* XWFilterAnimator+XWFlash.m in Sources */,
 				26F2A10A2196AE5A00841767 /* JKDBModel.m in Sources */,
+				268FF91D219EF0B5002F7A32 /* KTNewWelfareLayout.m in Sources */,
 				26F2A1252196AE5A00841767 /* UIView+DCExtension.m in Sources */,
 				26F2A1112196AE5A00841767 /* DCFlashButton.m in Sources */,
 				26F2A0F22196AE5A00841767 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
@@ -1408,6 +1461,7 @@
 				26F2A0FD2196AE5A00841767 /* AddressPickerView.m in Sources */,
 				26F2A1062196AE5A00841767 /* CitiesDataTool.m in Sources */,
 				26F2A1262196AE5A00841767 /* UIImageView+DCExtension.m in Sources */,
+				268FF913219D1434002F7A32 /* KTGrideItemCell.m in Sources */,
 				26F2A1022196AE5A00841767 /* ChooseLocationView.m in Sources */,
 				26F2A0E02196AE5A00841767 /* SDBrowserImageView.m in Sources */,
 				26F2A0EE2196AE5A00841767 /* XWCoolAnimator+XWLines.m in Sources */,

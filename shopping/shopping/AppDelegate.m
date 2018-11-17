@@ -21,9 +21,10 @@
 //    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    [window makeKeyAndVisible];
     
-    NSLog(@"___________++++++afasfauoiagosidh");
 
     
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+
     return YES;
 }
 
