@@ -72,7 +72,6 @@
     [super layoutSubviews];
     
     self.frame = CGRectMake(10, self.mj_y, ScreenW - 20, self.mj_h);
-    NSLog(@"%@",NSStringFromCGRect(self.frame));
     
     [_topAdGitView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.mas_equalTo(self);

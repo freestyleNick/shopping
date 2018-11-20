@@ -12,8 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol KTNewWelfareLayoutDelegate <NSObject>
 
-@optional;
-
+@required;
 /** 头部高度 */
 - (CGFloat)kt_HeightOfSectionHeaderForIndexPath:(NSIndexPath *)indexPath;
 /* 尾部高度 */

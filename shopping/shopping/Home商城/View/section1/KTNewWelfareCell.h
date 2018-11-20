@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^OneCellBlcok)(NSInteger indexpath);
+
 @interface KTNewWelfareCell : UICollectionViewCell
+
+/** onecell传值 */
+@property (nonatomic, copy) OneCellBlcok oneCellBlock;
 
 @end
 

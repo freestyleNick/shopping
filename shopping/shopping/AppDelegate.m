@@ -21,9 +21,8 @@
 //    UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    [window makeKeyAndVisible];
     
-
-    
-//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //改变状态栏字体颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 
     return YES;
 }
