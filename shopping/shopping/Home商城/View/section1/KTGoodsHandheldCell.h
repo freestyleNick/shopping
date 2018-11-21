@@ -11,9 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KTGoodsHandheldCell : UICollectionViewCell
-/** cellIamgeView */
-@property (nonatomic, strong) UIImageView *handheldImageView;
-/** handheldImage */
+/** 图片数组 */
 @property (nonatomic, strong) NSString *handheldImage;
 
 

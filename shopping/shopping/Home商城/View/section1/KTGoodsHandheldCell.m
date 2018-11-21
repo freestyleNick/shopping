@@ -9,6 +9,8 @@
 #import "KTGoodsHandheldCell.h"
 
 @interface KTGoodsHandheldCell ()
+/** cellIamgeView */
+@property (nonatomic, strong) UIImageView *handheldImageView;
 
 @end
 

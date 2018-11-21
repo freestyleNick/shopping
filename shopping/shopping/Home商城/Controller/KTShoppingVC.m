@@ -22,6 +22,8 @@
 #import "KTExceedApplianceCell.h"
 #import "KTScrollAdFootView.h"
 
+#import "KTYouLikeHeadView.h"
+#import "KTGoodsHandheldCell.h"
 
 @interface KTShoppingVC ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /* 自定义导航栏 */
@@ -55,6 +57,10 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
 /** 第3组cell */
 static NSString * const KTExceedApplianceCellID = @"KTExceedApplianceCellID";
 static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
+
+/** 第4组cell */
+static NSString * const KTYouLikeHeadViewID = @"KTYouLikeHeadViewID";
+static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
 
 @implementation KTShoppingVC
 
@@ -91,8 +97,22 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
         
         [_collectionView registerClass:[KTExceedApplianceCell class] forCellWithReuseIdentifier:KTExceedApplianceCellID];
         [_collectionView registerClass:[KTScrollAdFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTScrollAdFootViewID];
+        
+        [_collectionView registerClass:[KTYouLikeHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTYouLikeHeadViewID];
+        [_collectionView registerClass:[KTGoodsHandheldCell class] forCellWithReuseIdentifier:KTGoodsHandheldCellID];
     }
     return _collectionView;
+}
+
+- (UIButton *)backTopButton {
+    
+    if (!_backTopButton) {
+        _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 100 - KTabBarH, 40, 40);
+        [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
+        [_backTopButton addTarget:self action:@selector(ScrollToTop) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _backTopButton;
 }
 
 - (void)viewDidLoad {
@@ -102,15 +122,13 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
     
     [self setupUI];
     
-    _gridItem = [KTGridItem mj_objectArrayWithFilename:@"GoodsGrid.plist"];
-
+    [self loadData];
     
-    _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.view addSubview:_backTopButton];
-    [_backTopButton addTarget:self action:@selector(ScrollToTop) forControlEvents:UIControlEventTouchUpInside];
-    [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
-    _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 100 -KTabBarH, 40, 40);
+}
 
+- (void)loadData {
+    
+    _gridItem = [KTGridItem mj_objectArrayWithFilename:@"GoodsGrid.plist"];
 }
 
 #pragma mark - collectionView滚回顶部
@@ -124,13 +142,15 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
     [self.view addSubview:self.collectionView];
     //添加自定义导航栏
     [self.view addSubview:self.topToolView];
+    //添加回到顶部按钮
+    [self.view addSubview:self.backTopButton];
 
 }
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -138,6 +158,8 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
         return self.gridItem.count;
     }else if (section == 1 || section == 2 || section == 3) {
         return 1;
+    }else if (section == 4) {
+        return GoodsHandheldImagesArray.count;
     }
     return 0;
 }
@@ -162,6 +184,10 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
         KTExceedApplianceCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KTExceedApplianceCellID forIndexPath:indexPath];
         cell.goodExceedArray = GoodsRecommendArray;
         KTcell = cell;
+    }else if (indexPath.section == 4) {
+        KTGoodsHandheldCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KTGoodsHandheldCellID forIndexPath:indexPath];
+        cell.handheldImage = GoodsHandheldImagesArray[indexPath.row];
+        KTcell = cell;
     }
     
     return KTcell;
@@ -177,6 +203,10 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
             reusableview = headerView;
         }else if (indexPath.section == 2) {
             KTCountDownHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTCountDownHeadViewID forIndexPath:indexPath];
+            reusableview = headView;
+        }else if (indexPath.section == 4) {
+            KTYouLikeHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTYouLikeHeadViewID forIndexPath:indexPath];
+            [headView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs7.gomein.net.cn/T1WudvBm_T1RCvBVdK.png"]];
             reusableview = headView;
         }
         
@@ -206,9 +236,25 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
         return CGSizeMake(ScreenW, 150);
     }else if (indexPath.section == 3) {
         return CGSizeMake(ScreenW, ScreenW * 0.35 + 120);
+    }else if (indexPath.section == 4) {
+        return [self layoutAttributesForItemAtIndexPath:indexPath].size;
     }
 
     return CGSizeZero;
+}
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewLayoutAttributes *layoutAttributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    if (indexPath.section == 4) {
+        if (indexPath.row == 0) {
+            layoutAttributes.size = CGSizeMake(ScreenW, ScreenW * 0.38);
+        }else if (indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4){
+            layoutAttributes.size = CGSizeMake(ScreenW * 0.5 - 1, ScreenW * 0.24);
+        }else{
+            layoutAttributes.size = CGSizeMake(ScreenW * 0.25 - 1, ScreenW * 0.35);
+        }
+    }
+    return layoutAttributes;
 }
 
 
@@ -219,6 +265,8 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
         return CGSizeMake(ScreenW, 230); //图片滚动的宽高
     }else if (section == 2) {
         return CGSizeMake(ScreenW, 30);
+    }else if (section == 4) {
+        return CGSizeMake(ScreenW, 40);
     }
     return CGSizeZero;
 }
@@ -254,8 +302,11 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
     if (indexPath.section == 0) {//10
         NSLog(@"第0组cell---点击了手机充值等10个属性中第%zd个item",indexPath.row);
     }
-    if (indexPath.section == 1) {//10
+    else if (indexPath.section == 1) {//10
         NSLog(@"第1组cell---点击了手机充值等10个属性中第%zd个item",indexPath.row);
+    }
+    else if (indexPath.section == 4) {
+        NSLog(@"第4组cell---点击了第手机通讯等第%zd个item",indexPath.row);
     }
 
 }

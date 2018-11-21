@@ -14,6 +14,7 @@
 		261CCA3721A00DF9009D1E04 /* KTGoodsCountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CCA3621A00DF9009D1E04 /* KTGoodsCountDownCell.m */; };
 		261CCA3B21A298AA009D1E04 /* KTGoodsSurplusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CCA3921A298AA009D1E04 /* KTGoodsSurplusCell.m */; };
 		261CCA3C21A298AA009D1E04 /* KTGoodsSurplusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CCA3A21A298AA009D1E04 /* KTGoodsSurplusCell.xib */; };
+		263F282A21A530FE009EC99D /* KTYouLikeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F282921A530FE009EC99D /* KTYouLikeHeadView.m */; };
 		26618AF721A431230010520F /* KTScrollAdFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26618AF621A431230010520F /* KTScrollAdFootView.m */; };
 		266232D7219AA3F50064A87E /* KTTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232D6219AA3F50064A87E /* KTTabbar.m */; };
 		266232DB219AB22F0064A87E /* KTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232DA219AB22F0064A87E /* KTTabBarController.m */; };
@@ -59,7 +60,6 @@
 		268FF91A219EB020002F7A32 /* KTNewWelfareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF919219EB020002F7A32 /* KTNewWelfareCell.m */; };
 		268FF91D219EF0B5002F7A32 /* KTNewWelfareLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF91C219EF0B5002F7A32 /* KTNewWelfareLayout.m */; };
 		268FF923219EF444002F7A32 /* KTGoodsHandheldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 268FF921219EF444002F7A32 /* KTGoodsHandheldCell.m */; };
-		268FF924219EF444002F7A32 /* KTGoodsHandheldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 268FF922219EF444002F7A32 /* KTGoodsHandheldCell.xib */; };
 		26F29FE121968C0900841767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F29FE021968C0900841767 /* AppDelegate.m */; };
 		26F29FE421968C0900841767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F29FE321968C0900841767 /* ViewController.m */; };
 		26F29FE721968C0900841767 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F29FE521968C0900841767 /* Main.storyboard */; };
@@ -171,6 +171,8 @@
 		261CCA3821A298AA009D1E04 /* KTGoodsSurplusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsSurplusCell.h; sourceTree = "<group>"; };
 		261CCA3921A298AA009D1E04 /* KTGoodsSurplusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsSurplusCell.m; sourceTree = "<group>"; };
 		261CCA3A21A298AA009D1E04 /* KTGoodsSurplusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGoodsSurplusCell.xib; sourceTree = "<group>"; };
+		263F282821A530FE009EC99D /* KTYouLikeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTYouLikeHeadView.h; sourceTree = "<group>"; };
+		263F282921A530FE009EC99D /* KTYouLikeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTYouLikeHeadView.m; sourceTree = "<group>"; };
 		26618AF521A431230010520F /* KTScrollAdFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScrollAdFootView.h; sourceTree = "<group>"; };
 		26618AF621A431230010520F /* KTScrollAdFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScrollAdFootView.m; sourceTree = "<group>"; };
 		266232D5219AA3F50064A87E /* KTTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTabbar.h; sourceTree = "<group>"; };
@@ -232,7 +234,6 @@
 		268FF91C219EF0B5002F7A32 /* KTNewWelfareLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTNewWelfareLayout.m; sourceTree = "<group>"; };
 		268FF920219EF444002F7A32 /* KTGoodsHandheldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsHandheldCell.h; sourceTree = "<group>"; };
 		268FF921219EF444002F7A32 /* KTGoodsHandheldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsHandheldCell.m; sourceTree = "<group>"; };
-		268FF922219EF444002F7A32 /* KTGoodsHandheldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGoodsHandheldCell.xib; sourceTree = "<group>"; };
 		26F29FDC21968C0900841767 /* shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F29FDF21968C0900841767 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26F29FE021968C0900841767 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -469,6 +470,15 @@
 			path = section2;
 			sourceTree = "<group>";
 		};
+		263F282721A50DDC009EC99D /* section4 */ = {
+			isa = PBXGroup;
+			children = (
+				263F282821A530FE009EC99D /* KTYouLikeHeadView.h */,
+				263F282921A530FE009EC99D /* KTYouLikeHeadView.m */,
+			);
+			path = section4;
+			sourceTree = "<group>";
+		};
 		266232DC219AB2C70064A87E /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -612,7 +622,6 @@
 				268FF91C219EF0B5002F7A32 /* KTNewWelfareLayout.m */,
 				268FF920219EF444002F7A32 /* KTGoodsHandheldCell.h */,
 				268FF921219EF444002F7A32 /* KTGoodsHandheldCell.m */,
-				268FF922219EF444002F7A32 /* KTGoodsHandheldCell.xib */,
 			);
 			path = section1;
 			sourceTree = "<group>";
@@ -788,6 +797,7 @@
 		26F2A0042196AE1300841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				263F282721A50DDC009EC99D /* section4 */,
 				2611E5A121A3DE270026B7F0 /* section3 */,
 				261CCA2F219FFE57009D1E04 /* section2 */,
 				268FF91F219EF32B002F7A32 /* section1 */,
@@ -1386,7 +1396,6 @@
 				2662332C219AB8C20064A87E /* moveupAndDown@2x.gif in Resources */,
 				26623319219AB8C20064A87E /* YouLikeGoods.plist in Resources */,
 				26623324219AB8C20064A87E /* RecommendShop.plist in Resources */,
-				268FF924219EF444002F7A32 /* KTGoodsHandheldCell.xib in Resources */,
 				268FF914219D1434002F7A32 /* KTGrideItemCell.xib in Resources */,
 				2662330F219AB8C20064A87E /* DetailRecommend.plist in Resources */,
 				26623321219AB8C20064A87E /* GoodsGrid.plist in Resources */,
@@ -1522,6 +1531,7 @@
 				26F29FEF21968C0A00841767 /* main.m in Sources */,
 				26F2A1272196AE5A00841767 /* UIBarButtonItem+DCBarButtonItem.m in Sources */,
 				26F2A1182196AE5A00841767 /* YBPopupMenu.m in Sources */,
+				263F282A21A530FE009EC99D /* KTYouLikeHeadView.m in Sources */,
 				26F2A0E12196AE5A00841767 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				26F2A0E42196AE5A00841767 /* XWFilterAnimator+XWRipple.m in Sources */,
 				26F2A0DC2196AE5A00841767 /* UINavigationController+XWTransition.m in Sources */,
