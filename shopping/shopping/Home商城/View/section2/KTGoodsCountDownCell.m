@@ -47,8 +47,6 @@ static NSString * const KTGoodsSurplusCellID = @"KTGoodsSurplusCellID";
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.minimumLineSpacing = 1;
         layout.itemSize = CGSizeMake(self.mj_w * 0.38, self.mj_h * 0.9);
-        NSLog(@"%@",NSStringFromCGRect(self.frame));
-        NSLog(@"%@",NSStringFromCGSize(layout.itemSize));
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 
         _collectView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];

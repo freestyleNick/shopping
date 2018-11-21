@@ -79,7 +79,6 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="mPS-Xa-Ujq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2fu-0b-4gi"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Pab-bG-liX" secondAttribute="bottom" id="Fzr-xI-Jc9"/>
@@ -93,6 +92,12 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftItemButton" destination="mPS-Xa-Ujq" id="njf-NV-opu"/>
+                <outlet property="rightItemButton" destination="5Vu-AA-8aL" id="mEm-gG-6En"/>
+                <outlet property="rightRItemButton" destination="Pab-bG-liX" id="iI4-Uk-nhm"/>
+                <outlet property="topSearchView" destination="b3D-Dq-E7R" id="D4j-IA-4Nn"/>
+            </connections>
             <point key="canvasLocation" x="179.19999999999999" y="-215.8920539730135"/>
         </view>
     </objects>

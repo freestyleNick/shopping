@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0B0879CE8B787578B9B9C61E /* libPods-shopping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 483906F411061C2B18ED7D68 /* libPods-shopping.a */; };
+		2611E5A421A3E0720026B7F0 /* KTExceedApplianceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2611E5A321A3E0720026B7F0 /* KTExceedApplianceCell.m */; };
 		261CCA33219FFEB2009D1E04 /* KTCountDownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CCA31219FFEB2009D1E04 /* KTCountDownHeadView.m */; };
 		261CCA34219FFEB2009D1E04 /* KTCountDownHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CCA32219FFEB2009D1E04 /* KTCountDownHeadView.xib */; };
 		261CCA3721A00DF9009D1E04 /* KTGoodsCountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CCA3621A00DF9009D1E04 /* KTGoodsCountDownCell.m */; };
 		261CCA3B21A298AA009D1E04 /* KTGoodsSurplusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CCA3921A298AA009D1E04 /* KTGoodsSurplusCell.m */; };
 		261CCA3C21A298AA009D1E04 /* KTGoodsSurplusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CCA3A21A298AA009D1E04 /* KTGoodsSurplusCell.xib */; };
+		26618AF721A431230010520F /* KTScrollAdFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26618AF621A431230010520F /* KTScrollAdFootView.m */; };
 		266232D7219AA3F50064A87E /* KTTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232D6219AA3F50064A87E /* KTTabbar.m */; };
 		266232DB219AB22F0064A87E /* KTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232DA219AB22F0064A87E /* KTTabBarController.m */; };
 		266232DF219AB30F0064A87E /* KTBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232DE219AB30F0064A87E /* KTBaseController.m */; };
@@ -159,6 +161,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2611E5A221A3E0720026B7F0 /* KTExceedApplianceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTExceedApplianceCell.h; sourceTree = "<group>"; };
+		2611E5A321A3E0720026B7F0 /* KTExceedApplianceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTExceedApplianceCell.m; sourceTree = "<group>"; };
 		261CCA30219FFEB2009D1E04 /* KTCountDownHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTCountDownHeadView.h; sourceTree = "<group>"; };
 		261CCA31219FFEB2009D1E04 /* KTCountDownHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTCountDownHeadView.m; sourceTree = "<group>"; };
 		261CCA32219FFEB2009D1E04 /* KTCountDownHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTCountDownHeadView.xib; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 		261CCA3821A298AA009D1E04 /* KTGoodsSurplusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsSurplusCell.h; sourceTree = "<group>"; };
 		261CCA3921A298AA009D1E04 /* KTGoodsSurplusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsSurplusCell.m; sourceTree = "<group>"; };
 		261CCA3A21A298AA009D1E04 /* KTGoodsSurplusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGoodsSurplusCell.xib; sourceTree = "<group>"; };
+		26618AF521A431230010520F /* KTScrollAdFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScrollAdFootView.h; sourceTree = "<group>"; };
+		26618AF621A431230010520F /* KTScrollAdFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScrollAdFootView.m; sourceTree = "<group>"; };
 		266232D5219AA3F50064A87E /* KTTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTabbar.h; sourceTree = "<group>"; };
 		266232D6219AA3F50064A87E /* KTTabbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTTabbar.m; sourceTree = "<group>"; };
 		266232D9219AB22F0064A87E /* KTTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTabBarController.h; sourceTree = "<group>"; };
@@ -435,6 +441,17 @@
 				483906F411061C2B18ED7D68 /* libPods-shopping.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2611E5A121A3DE270026B7F0 /* section3 */ = {
+			isa = PBXGroup;
+			children = (
+				2611E5A221A3E0720026B7F0 /* KTExceedApplianceCell.h */,
+				2611E5A321A3E0720026B7F0 /* KTExceedApplianceCell.m */,
+				26618AF521A431230010520F /* KTScrollAdFootView.h */,
+				26618AF621A431230010520F /* KTScrollAdFootView.m */,
+			);
+			path = section3;
 			sourceTree = "<group>";
 		};
 		261CCA2F219FFE57009D1E04 /* section2 */ = {
@@ -771,6 +788,7 @@
 		26F2A0042196AE1300841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2611E5A121A3DE270026B7F0 /* section3 */,
 				261CCA2F219FFE57009D1E04 /* section2 */,
 				268FF91F219EF32B002F7A32 /* section1 */,
 				268FF91E219EF2E2002F7A32 /* section0 */,
@@ -1474,6 +1492,7 @@
 				268FF90A219C037C002F7A32 /* KTCycleTopView.m in Sources */,
 				26F2A0F02196AE5A00841767 /* XWCoolAnimator+XWFold.m in Sources */,
 				26F2A0D92196AE5A00841767 /* DCCustionButton.m in Sources */,
+				26618AF721A431230010520F /* KTScrollAdFootView.m in Sources */,
 				26F2A0EF2196AE5A00841767 /* XWCoolAnimator+XWExplode.m in Sources */,
 				26F2A1292196AE5A00841767 /* NSURL+DCHook.m in Sources */,
 				26F2A0E72196AE5A00841767 /* XWFilterAnimator+XWMask.m in Sources */,
@@ -1494,6 +1513,7 @@
 				26F2A1262196AE5A00841767 /* UIImageView+DCExtension.m in Sources */,
 				268FF913219D1434002F7A32 /* KTGrideItemCell.m in Sources */,
 				261CCA33219FFEB2009D1E04 /* KTCountDownHeadView.m in Sources */,
+				2611E5A421A3E0720026B7F0 /* KTExceedApplianceCell.m in Sources */,
 				26F2A1022196AE5A00841767 /* ChooseLocationView.m in Sources */,
 				26F2A0E02196AE5A00841767 /* SDBrowserImageView.m in Sources */,
 				26F2A0EE2196AE5A00841767 /* XWCoolAnimator+XWLines.m in Sources */,

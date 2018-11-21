@@ -19,6 +19,9 @@
 #import "KTCountDownHeadView.h"
 #import "KTGoodsCountDownCell.h"
 
+#import "KTExceedApplianceCell.h"
+#import "KTScrollAdFootView.h"
+
 
 @interface KTShoppingVC ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /* 自定义导航栏 */
@@ -49,7 +52,9 @@ static NSString * const KTNewWelfareCellID = @"KTNewWelfareCellID";
 static NSString * const KTCountDownHeadViewID = @"KTCountDownHeadViewID";
 static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
 
-
+/** 第3组cell */
+static NSString * const KTExceedApplianceCellID = @"KTExceedApplianceCellID";
+static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
 
 @implementation KTShoppingVC
 
@@ -84,6 +89,8 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
         [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([KTCountDownHeadView class]) bundle:[NSBundle mainBundle]] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTCountDownHeadViewID];
         [_collectionView registerClass:[KTGoodsCountDownCell class] forCellWithReuseIdentifier:KTGoodsCountDownCellID];
         
+        [_collectionView registerClass:[KTExceedApplianceCell class] forCellWithReuseIdentifier:KTExceedApplianceCellID];
+        [_collectionView registerClass:[KTScrollAdFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTScrollAdFootViewID];
     }
     return _collectionView;
 }
@@ -102,13 +109,14 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
     [self.view addSubview:_backTopButton];
     [_backTopButton addTarget:self action:@selector(ScrollToTop) forControlEvents:UIControlEventTouchUpInside];
     [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
-    _backTopButton.hidden = YES;
-    _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 110, 40, 40);
+    _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 100 -KTabBarH, 40, 40);
 
 }
 
-- (void)ScrollToTop {
-    [self.collectionView reloadData];
+#pragma mark - collectionView滚回顶部
+- (void)ScrollToTop
+{
+    [self.collectionView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
 }
 
 - (void)setupUI {
@@ -122,13 +130,13 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
         return self.gridItem.count;
-    }else if (section == 1 || section == 2) {
+    }else if (section == 1 || section == 2 || section == 3) {
         return 1;
     }
     return 0;
@@ -149,6 +157,10 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
         KTcell = cell;
     }else if (indexPath.section == 2) {
         KTGoodsCountDownCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KTGoodsCountDownCellID forIndexPath:indexPath];
+        KTcell = cell;
+    }else if (indexPath.section == 3) {
+        KTExceedApplianceCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KTExceedApplianceCellID forIndexPath:indexPath];
+        cell.goodExceedArray = GoodsRecommendArray;
         KTcell = cell;
     }
     
@@ -173,6 +185,9 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
         if (indexPath.section == 0) {//广告git和滚动标题
             KTTopLineFootView *topLineFootView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTTopLineFootViewID forIndexPath:indexPath];
             reusableview = topLineFootView;
+        }else if (indexPath.section == 3) {
+            KTScrollAdFootView *footView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTScrollAdFootViewID forIndexPath:indexPath];
+            reusableview = footView;
         }
     
     }
@@ -189,7 +204,10 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
         return CGSizeMake(ScreenW, 180);
     }else if (indexPath.section == 2) {
         return CGSizeMake(ScreenW, 150);
+    }else if (indexPath.section == 3) {
+        return CGSizeMake(ScreenW, ScreenW * 0.35 + 120);
     }
+
     return CGSizeZero;
 }
 
@@ -200,7 +218,7 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
     if (section == 0) {
         return CGSizeMake(ScreenW, 230); //图片滚动的宽高
     }else if (section == 2) {
-        return CGSizeMake(ScreenW, 40);
+        return CGSizeMake(ScreenW, 30);
     }
     return CGSizeZero;
 }
@@ -210,6 +228,8 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
     
     if (section == 0) {
         return CGSizeMake(ScreenW - 50, 160);
+    }else if (section == 3) {
+        return CGSizeMake(ScreenW, 80);
     }
     return CGSizeZero;
 }
@@ -254,6 +274,19 @@ static NSString * const KTGoodsCountDownCellID = @"KTGoodsCountDownCellID";
 
 }
 
-
+#pragma mark - <UIScrollViewDelegate>
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    _backTopButton.hidden = (scrollView.contentOffset.y > -KStatusH) ? NO : YES;//判断回到顶部按钮是否隐藏
+    _topToolView.hidden = (scrollView.contentOffset.y < -KStatusH) ? YES : NO;//判断顶部工具View的显示和隐形
+    if (scrollView.contentOffset.y > -KStatusH) {
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+        [[NSNotificationCenter defaultCenter]postNotificationName:SHOWTOPTOOLVIEW object:nil];
+    }else{
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+        [[NSNotificationCenter defaultCenter]postNotificationName:HIDETOPTOOLVIEW object:nil];
+    }
+}
 
 @end

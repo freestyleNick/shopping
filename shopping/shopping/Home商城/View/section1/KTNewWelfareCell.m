@@ -92,11 +92,8 @@ static NSString *const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
     
 }
 
-
 #pragma mark - DCItemSortLayoutDelegate
 #pragma mark - 底部高度
-
-
 
 -(CGFloat)kt_HeightOfSectionFooterForIndexPath:(NSIndexPath *)indexPath {
     return DCMargin;
