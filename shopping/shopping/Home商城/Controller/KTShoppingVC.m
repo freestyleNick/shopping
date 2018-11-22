@@ -25,6 +25,10 @@
 #import "KTYouLikeHeadView.h"
 #import "KTGoodsHandheldCell.h"
 
+#import "KTRecommendItem.h"
+#import "KTGoodsYouLikeCell.h"
+#import "KTOverFootView.h"
+
 @interface KTShoppingVC ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /* 自定义导航栏 */
 @property (nonatomic, strong) KTHomeTopNavView *topToolView;
@@ -32,6 +36,8 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 /** 第0组cell10个上面模型数据 */
 @property (strong , nonatomic)NSMutableArray<KTGridItem *> *gridItem;
+/* 推荐商品属性 */
+@property (strong , nonatomic)NSMutableArray<KTRecommendItem *> *youLikeItem;
 /** 第0组cell最顶部head轮播图 */
 @property (nonatomic, strong) KTCycleTopView *cycleTopView;
 /* 滚回顶部按钮 */
@@ -61,6 +67,10 @@ static NSString * const KTScrollAdFootViewID = @"KTScrollAdFootViewID";
 /** 第4组cell */
 static NSString * const KTYouLikeHeadViewID = @"KTYouLikeHeadViewID";
 static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
+
+/** 第5组cell */
+static NSString * const KTGoodsYouLikeCellID = @"KTGoodsYouLikeCellID";
+static NSString * const KTOverFootViewID = @"KTOverFootViewID";
 
 @implementation KTShoppingVC
 
@@ -100,6 +110,9 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         
         [_collectionView registerClass:[KTYouLikeHeadView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTYouLikeHeadViewID];
         [_collectionView registerClass:[KTGoodsHandheldCell class] forCellWithReuseIdentifier:KTGoodsHandheldCellID];
+        
+        [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([KTGoodsYouLikeCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:KTGoodsYouLikeCellID];
+        [_collectionView registerClass:[KTOverFootView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTOverFootViewID];
     }
     return _collectionView;
 }
@@ -123,12 +136,12 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
     [self setupUI];
     
     [self loadData];
-    
 }
 
 - (void)loadData {
     
     _gridItem = [KTGridItem mj_objectArrayWithFilename:@"GoodsGrid.plist"];
+    _youLikeItem = [KTRecommendItem mj_objectArrayWithFilename:@"HomeHighGoods.plist"];
 }
 
 #pragma mark - collectionView滚回顶部
@@ -144,13 +157,12 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
     [self.view addSubview:self.topToolView];
     //添加回到顶部按钮
     [self.view addSubview:self.backTopButton];
-
 }
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 5;
+    return 6;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -160,7 +172,8 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         return 1;
     }else if (section == 4) {
         return GoodsHandheldImagesArray.count;
-    }
+    }else if (section == 5)
+        return self.youLikeItem.count;
     return 0;
 }
 
@@ -188,6 +201,10 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         KTGoodsHandheldCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KTGoodsHandheldCellID forIndexPath:indexPath];
         cell.handheldImage = GoodsHandheldImagesArray[indexPath.row];
         KTcell = cell;
+    }else if (indexPath.section == 5) {
+        KTGoodsYouLikeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KTGoodsYouLikeCellID forIndexPath:indexPath];
+        cell.commendItem = self.youLikeItem[indexPath.row];
+        KTcell = cell;
     }
     
     return KTcell;
@@ -208,6 +225,10 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
             KTYouLikeHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTYouLikeHeadViewID forIndexPath:indexPath];
             [headView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs7.gomein.net.cn/T1WudvBm_T1RCvBVdK.png"]];
             reusableview = headView;
+        }else if (indexPath.section == 5) {
+            KTYouLikeHeadView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:KTYouLikeHeadViewID forIndexPath:indexPath];
+            [headView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs5.gomein.net.cn/T16LLvByZj1RCvBVdK.png"]];
+            reusableview = headView;
         }
         
     }
@@ -218,13 +239,14 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         }else if (indexPath.section == 3) {
             KTScrollAdFootView *footView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTScrollAdFootViewID forIndexPath:indexPath];
             reusableview = footView;
+        }else if (indexPath.section == 5) {
+            KTOverFootView *footView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:KTOverFootViewID forIndexPath:indexPath];
+            reusableview = footView;
         }
-    
     }
-    
     return reusableview;
-    
 }
+
 #pragma mark - item宽高
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -238,6 +260,8 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         return CGSizeMake(ScreenW, ScreenW * 0.35 + 120);
     }else if (indexPath.section == 4) {
         return [self layoutAttributesForItemAtIndexPath:indexPath].size;
+    }else{
+        return CGSizeMake((ScreenW - 4)/2, (ScreenW - 4)/2 + 40);
     }
 
     return CGSizeZero;
@@ -265,7 +289,7 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         return CGSizeMake(ScreenW, 230); //图片滚动的宽高
     }else if (section == 2) {
         return CGSizeMake(ScreenW, 30);
-    }else if (section == 4) {
+    }else if (section == 4 || section == 5) {
         return CGSizeMake(ScreenW, 40);
     }
     return CGSizeZero;
@@ -278,6 +302,8 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         return CGSizeMake(ScreenW - 50, 160);
     }else if (section == 3) {
         return CGSizeMake(ScreenW, 80);
+    }else if (section == 5) {
+        return CGSizeMake(ScreenW, 40);
     }
     return CGSizeZero;
 }
@@ -306,11 +332,11 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
         NSLog(@"第1组cell---点击了手机充值等10个属性中第%zd个item",indexPath.row);
     }
     else if (indexPath.section == 4) {
-        NSLog(@"第4组cell---点击了第手机通讯等第%zd个item",indexPath.row);
+        NSLog(@"第4组cell---点击了手机通讯等第%zd个item",indexPath.row);
+    }else if (indexPath.section == 5) {
+        NSLog(@"第5组cell---点击了苹果手机等第%zd个item",indexPath.row);
     }
-
 }
-
 
 - (void)viewWillAppear:(BOOL)animated {
     
@@ -322,7 +348,6 @@ static NSString * const KTGoodsHandheldCellID = @"KTGoodsHandheldCellID";
     
     [super viewWillDisappear:YES];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
-
 }
 
 #pragma mark - <UIScrollViewDelegate>

@@ -15,6 +15,9 @@
 		261CCA3B21A298AA009D1E04 /* KTGoodsSurplusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 261CCA3921A298AA009D1E04 /* KTGoodsSurplusCell.m */; };
 		261CCA3C21A298AA009D1E04 /* KTGoodsSurplusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261CCA3A21A298AA009D1E04 /* KTGoodsSurplusCell.xib */; };
 		263F282A21A530FE009EC99D /* KTYouLikeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F282921A530FE009EC99D /* KTYouLikeHeadView.m */; };
+		263F282F21A54BE5009EC99D /* KTGoodsYouLikeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F282D21A54BE5009EC99D /* KTGoodsYouLikeCell.m */; };
+		263F283021A54BE5009EC99D /* KTGoodsYouLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 263F282E21A54BE5009EC99D /* KTGoodsYouLikeCell.xib */; };
+		265214B621A6539C00A34403 /* KTOverFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 265214B521A6539C00A34403 /* KTOverFootView.m */; };
 		26618AF721A431230010520F /* KTScrollAdFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26618AF621A431230010520F /* KTScrollAdFootView.m */; };
 		266232D7219AA3F50064A87E /* KTTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232D6219AA3F50064A87E /* KTTabbar.m */; };
 		266232DB219AB22F0064A87E /* KTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266232DA219AB22F0064A87E /* KTTabBarController.m */; };
@@ -173,6 +176,11 @@
 		261CCA3A21A298AA009D1E04 /* KTGoodsSurplusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGoodsSurplusCell.xib; sourceTree = "<group>"; };
 		263F282821A530FE009EC99D /* KTYouLikeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTYouLikeHeadView.h; sourceTree = "<group>"; };
 		263F282921A530FE009EC99D /* KTYouLikeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTYouLikeHeadView.m; sourceTree = "<group>"; };
+		263F282C21A54BE5009EC99D /* KTGoodsYouLikeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTGoodsYouLikeCell.h; sourceTree = "<group>"; };
+		263F282D21A54BE5009EC99D /* KTGoodsYouLikeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTGoodsYouLikeCell.m; sourceTree = "<group>"; };
+		263F282E21A54BE5009EC99D /* KTGoodsYouLikeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTGoodsYouLikeCell.xib; sourceTree = "<group>"; };
+		265214B421A6539C00A34403 /* KTOverFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTOverFootView.h; sourceTree = "<group>"; };
+		265214B521A6539C00A34403 /* KTOverFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTOverFootView.m; sourceTree = "<group>"; };
 		26618AF521A431230010520F /* KTScrollAdFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTScrollAdFootView.h; sourceTree = "<group>"; };
 		26618AF621A431230010520F /* KTScrollAdFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTScrollAdFootView.m; sourceTree = "<group>"; };
 		266232D5219AA3F50064A87E /* KTTabbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTabbar.h; sourceTree = "<group>"; };
@@ -477,6 +485,18 @@
 				263F282921A530FE009EC99D /* KTYouLikeHeadView.m */,
 			);
 			path = section4;
+			sourceTree = "<group>";
+		};
+		263F282B21A544A2009EC99D /* section5 */ = {
+			isa = PBXGroup;
+			children = (
+				263F282C21A54BE5009EC99D /* KTGoodsYouLikeCell.h */,
+				263F282D21A54BE5009EC99D /* KTGoodsYouLikeCell.m */,
+				263F282E21A54BE5009EC99D /* KTGoodsYouLikeCell.xib */,
+				265214B421A6539C00A34403 /* KTOverFootView.h */,
+				265214B521A6539C00A34403 /* KTOverFootView.m */,
+			);
+			path = section5;
 			sourceTree = "<group>";
 		};
 		266232DC219AB2C70064A87E /* Main */ = {
@@ -797,6 +817,7 @@
 		26F2A0042196AE1300841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				263F282B21A544A2009EC99D /* section5 */,
 				263F282721A50DDC009EC99D /* section4 */,
 				2611E5A121A3DE270026B7F0 /* section3 */,
 				261CCA2F219FFE57009D1E04 /* section2 */,
@@ -1406,6 +1427,7 @@
 				26F2A0F72196AE5A00841767 /* mask.jpg in Resources */,
 				2662331C219AB8C20064A87E /* CommentData.plist in Resources */,
 				26623313219AB8C20064A87E /* ClassiftyGoods02.plist in Resources */,
+				263F283021A54BE5009EC99D /* KTGoodsYouLikeCell.xib in Resources */,
 				26623316219AB8C20064A87E /* FiltrateItem.plist in Resources */,
 				26623310219AB8C20064A87E /* ClassiftyGoods03.plist in Resources */,
 				261CCA3C21A298AA009D1E04 /* KTGoodsSurplusCell.xib in Resources */,
@@ -1508,6 +1530,7 @@
 				26F2A0F92196AE5A00841767 /* XWTransitionAnimator.m in Sources */,
 				26F2A0FF2196AE5A00841767 /* UIView+Frame.m in Sources */,
 				26F2A0DB2196AE5A00841767 /* UIView+Snapshot.m in Sources */,
+				263F282F21A54BE5009EC99D /* KTGoodsYouLikeCell.m in Sources */,
 				26F2A11E2196AE5A00841767 /* DCCheckRegular.m in Sources */,
 				268FF91A219EB020002F7A32 /* KTNewWelfareCell.m in Sources */,
 				26F2A0E52196AE5A00841767 /* XWFilterAnimator+XWFlash.m in Sources */,
@@ -1535,6 +1558,7 @@
 				26F2A0E12196AE5A00841767 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				26F2A0E42196AE5A00841767 /* XWFilterAnimator+XWRipple.m in Sources */,
 				26F2A0DC2196AE5A00841767 /* UINavigationController+XWTransition.m in Sources */,
+				265214B621A6539C00A34403 /* KTOverFootView.m in Sources */,
 				26F2A1042196AE5A00841767 /* AddressView.m in Sources */,
 				26623332219AB9C60064A87E /* KTGridItem.m in Sources */,
 				26F2A11C2196AE5A00841767 /* DCKeepNewUserData.m in Sources */,
