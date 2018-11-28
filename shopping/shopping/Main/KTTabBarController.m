@@ -8,7 +8,7 @@
 
 #import "KTTabBarController.h"
 
-@interface KTTabBarController ()
+@interface KTTabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -18,6 +18,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.selectedIndex = 0;
+    
+    self.delegate = self;
+}
+
+#pragma mark - 控制器跳转拦截
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    
+//    if(viewController == [tabBarController.viewControllers objectAtIndex:DCTabBarControllerPerson]){
+//
+//        if (![[DCObjManager dc_readUserDataForKey:@"isLogin"] isEqualToString:@"1"]) {
+//
+//            DCLoginViewController *dcLoginVc = [DCLoginViewController new];
+//            [self presentViewController:dcLoginVc animated:YES completion:nil];
+//            return NO;
+//        }
+//    }
+    return YES;
 }
 
 /*

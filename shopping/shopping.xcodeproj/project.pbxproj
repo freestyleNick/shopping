@@ -161,6 +161,7 @@
 		26F2A1342196D6B200841767 /* KTShoppingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A1332196D6B200841767 /* KTShoppingVC.m */; };
 		26F2A1372199AEF600841767 /* KTHomeTopNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A1362199AEF600841767 /* KTHomeTopNavView.m */; };
 		26F2A1392199AF0300841767 /* KTHomeTopNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */; };
+		26F3381921AE432E00E725F1 /* KTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3381821AE432E00E725F1 /* KTMineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -427,6 +428,8 @@
 		26F2A1352199AEF600841767 /* KTHomeTopNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTHomeTopNavView.h; sourceTree = "<group>"; };
 		26F2A1362199AEF600841767 /* KTHomeTopNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTHomeTopNavView.m; sourceTree = "<group>"; };
 		26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTHomeTopNavView.xib; sourceTree = "<group>"; };
+		26F3381721AE432E00E725F1 /* KTMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMineController.h; sourceTree = "<group>"; };
+		26F3381821AE432E00E725F1 /* KTMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMineController.m; sourceTree = "<group>"; };
 		483906F411061C2B18ED7D68 /* libPods-shopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E4ADEAFB176F0898A4B18 /* Pods-shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A0CEAE4C3D0112439AA958 /* Pods-shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.release.xcconfig"; sourceTree = "<group>"; };
@@ -703,6 +706,8 @@
 		26F29FF62196AD6500841767 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				26F3381721AE432E00E725F1 /* KTMineController.h */,
+				26F3381821AE432E00E725F1 /* KTMineController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1555,6 +1560,7 @@
 				26F2A1272196AE5A00841767 /* UIBarButtonItem+DCBarButtonItem.m in Sources */,
 				26F2A1182196AE5A00841767 /* YBPopupMenu.m in Sources */,
 				263F282A21A530FE009EC99D /* KTYouLikeHeadView.m in Sources */,
+				26F3381921AE432E00E725F1 /* KTMineController.m in Sources */,
 				26F2A0E12196AE5A00841767 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				26F2A0E42196AE5A00841767 /* XWFilterAnimator+XWRipple.m in Sources */,
 				26F2A0DC2196AE5A00841767 /* UINavigationController+XWTransition.m in Sources */,
