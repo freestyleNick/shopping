@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KTStateItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DXs-KU-7uU">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="126"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drG-TC-cTu">
+                        <rect key="frame" x="32.5" y="10" width="65" height="32.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="drG-TC-cTu" secondAttribute="height" multiplier="2" id="RYf-Va-3fo"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退款/售后" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8t-iR-VGW">
+                        <rect key="frame" x="38.5" y="47.5" width="53.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puw-62-UUd">
+                        <rect key="frame" x="0.0" y="126" width="130" height="10"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14594927226027396" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="puw-62-UUd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3PF-cO-Wqh"/>
+                <constraint firstItem="drG-TC-cTu" firstAttribute="width" secondItem="DXs-KU-7uU" secondAttribute="width" multiplier="0.5" id="AgK-1g-am5"/>
+                <constraint firstAttribute="trailing" secondItem="puw-62-UUd" secondAttribute="trailing" id="Nqq-ss-jX1"/>
+                <constraint firstItem="DXs-KU-7uU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Q2o-tw-Ofy"/>
+                <constraint firstAttribute="bottom" secondItem="puw-62-UUd" secondAttribute="bottom" id="TKi-tH-Yl5"/>
+                <constraint firstItem="DXs-KU-7uU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="amK-o0-TPt"/>
+                <constraint firstItem="puw-62-UUd" firstAttribute="top" secondItem="DXs-KU-7uU" secondAttribute="bottom" id="eaa-7v-26b"/>
+                <constraint firstAttribute="trailing" secondItem="DXs-KU-7uU" secondAttribute="trailing" id="fgm-VS-w4U"/>
+                <constraint firstAttribute="bottom" secondItem="DXs-KU-7uU" secondAttribute="bottom" constant="10" id="ggh-ab-81n"/>
+                <constraint firstItem="drG-TC-cTu" firstAttribute="centerX" secondItem="DXs-KU-7uU" secondAttribute="centerX" id="lO6-BM-QSn"/>
+                <constraint firstItem="U8t-iR-VGW" firstAttribute="centerX" secondItem="DXs-KU-7uU" secondAttribute="centerX" id="oEK-mK-QAJ"/>
+                <constraint firstItem="U8t-iR-VGW" firstAttribute="top" secondItem="drG-TC-cTu" secondAttribute="bottom" constant="5" id="os3-LQ-ldi"/>
+                <constraint firstItem="drG-TC-cTu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wEM-cD-RRs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="130" height="136"/>
+            <connections>
+                <outlet property="stateBgImage" destination="DXs-KU-7uU" id="A78-Jb-3aE"/>
+                <outlet property="stateBtn" destination="drG-TC-cTu" id="aZv-fI-tCf"/>
+                <outlet property="stateLabel" destination="U8t-iR-VGW" id="9h9-5Z-cNN"/>
+            </connections>
+            <point key="canvasLocation" x="-84.799999999999997" y="-42.278860569715143"/>
+        </collectionViewCell>
+    </objects>
+</document>

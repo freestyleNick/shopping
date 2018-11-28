@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.selectedIndex = 0;
+    self.selectedIndex = 2;
     
     self.delegate = self;
 }

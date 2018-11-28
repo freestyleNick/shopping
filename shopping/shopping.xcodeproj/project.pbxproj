@@ -162,6 +162,12 @@
 		26F2A1372199AEF600841767 /* KTHomeTopNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F2A1362199AEF600841767 /* KTHomeTopNavView.m */; };
 		26F2A1392199AF0300841767 /* KTHomeTopNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */; };
 		26F3381921AE432E00E725F1 /* KTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3381821AE432E00E725F1 /* KTMineController.m */; };
+		26F3382721AE83F100E725F1 /* KTMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3382621AE83F100E725F1 /* KTMineHeaderView.m */; };
+		26F3382921AE840100E725F1 /* KTMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F3382821AE840100E725F1 /* KTMineHeaderView.xib */; };
+		26F3382C21AE930000E725F1 /* KTCenterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3382B21AE930000E725F1 /* KTCenterItemCell.m */; };
+		26F3382F21AEC50B00E725F1 /* KTStateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3382E21AEC50B00E725F1 /* KTStateItem.m */; };
+		26F3383321AEC6E200E725F1 /* KTStateItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3383121AEC6E200E725F1 /* KTStateItemCell.m */; };
+		26F3383421AEC6E200E725F1 /* KTStateItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -430,6 +436,16 @@
 		26F2A1382199AF0300841767 /* KTHomeTopNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTHomeTopNavView.xib; sourceTree = "<group>"; };
 		26F3381721AE432E00E725F1 /* KTMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMineController.h; sourceTree = "<group>"; };
 		26F3381821AE432E00E725F1 /* KTMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMineController.m; sourceTree = "<group>"; };
+		26F3382521AE83F100E725F1 /* KTMineHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMineHeaderView.h; sourceTree = "<group>"; };
+		26F3382621AE83F100E725F1 /* KTMineHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMineHeaderView.m; sourceTree = "<group>"; };
+		26F3382821AE840100E725F1 /* KTMineHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTMineHeaderView.xib; sourceTree = "<group>"; };
+		26F3382A21AE930000E725F1 /* KTCenterItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTCenterItemCell.h; sourceTree = "<group>"; };
+		26F3382B21AE930000E725F1 /* KTCenterItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTCenterItemCell.m; sourceTree = "<group>"; };
+		26F3382D21AEC50B00E725F1 /* KTStateItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTStateItem.h; sourceTree = "<group>"; };
+		26F3382E21AEC50B00E725F1 /* KTStateItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTStateItem.m; sourceTree = "<group>"; };
+		26F3383021AEC6E200E725F1 /* KTStateItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTStateItemCell.h; sourceTree = "<group>"; };
+		26F3383121AEC6E200E725F1 /* KTStateItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTStateItemCell.m; sourceTree = "<group>"; };
+		26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTStateItemCell.xib; sourceTree = "<group>"; };
 		483906F411061C2B18ED7D68 /* libPods-shopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E4ADEAFB176F0898A4B18 /* Pods-shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A0CEAE4C3D0112439AA958 /* Pods-shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.release.xcconfig"; sourceTree = "<group>"; };
@@ -715,6 +731,8 @@
 		26F29FF72196AD6500841767 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				26F3382D21AEC50B00E725F1 /* KTStateItem.h */,
+				26F3382E21AEC50B00E725F1 /* KTStateItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -722,6 +740,14 @@
 		26F29FF82196AD6500841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				26F3382521AE83F100E725F1 /* KTMineHeaderView.h */,
+				26F3382621AE83F100E725F1 /* KTMineHeaderView.m */,
+				26F3382821AE840100E725F1 /* KTMineHeaderView.xib */,
+				26F3382A21AE930000E725F1 /* KTCenterItemCell.h */,
+				26F3382B21AE930000E725F1 /* KTCenterItemCell.m */,
+				26F3383021AEC6E200E725F1 /* KTStateItemCell.h */,
+				26F3383121AEC6E200E725F1 /* KTStateItemCell.m */,
+				26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1405,6 +1431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26623311219AB8C20064A87E /* ClasiftyGoods.plist in Resources */,
+				26F3382921AE840100E725F1 /* KTMineHeaderView.xib in Resources */,
 				26623315219AB8C20064A87E /* ShopItem.plist in Resources */,
 				2662331D219AB8C20064A87E /* CommentBadData.plist in Resources */,
 				26F29FEC21968C0A00841767 /* LaunchScreen.storyboard in Resources */,
@@ -1437,6 +1464,7 @@
 				26623310219AB8C20064A87E /* ClassiftyGoods03.plist in Resources */,
 				261CCA3C21A298AA009D1E04 /* KTGoodsSurplusCell.xib in Resources */,
 				26F2A1102196AE5A00841767 /* flash_select@2x.png in Resources */,
+				26F3383421AEC6E200E725F1 /* KTStateItemCell.xib in Resources */,
 				26623314219AB8C20064A87E /* FootprintGoods.plist in Resources */,
 				26F2A1312196D09600841767 /* Home.storyboard in Resources */,
 				26623322219AB8C20064A87E /* HomeHighGoods.plist in Resources */,
@@ -1511,6 +1539,8 @@
 				26F2A0D52196AE5A00841767 /* DCConsts.m in Sources */,
 				26F2A1202196AE5A00841767 /* Foundation+Log.m in Sources */,
 				26F29FE421968C0900841767 /* ViewController.m in Sources */,
+				26F3382721AE83F100E725F1 /* KTMineHeaderView.m in Sources */,
+				26F3383321AEC6E200E725F1 /* KTStateItemCell.m in Sources */,
 				26F2A1052196AE5A00841767 /* AddressTableViewCell.m in Sources */,
 				26F2A11F2196AE5A00841767 /* DCObjManager.m in Sources */,
 				26F2A0EB2196AE5A00841767 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
@@ -1537,6 +1567,7 @@
 				26F2A0DB2196AE5A00841767 /* UIView+Snapshot.m in Sources */,
 				263F282F21A54BE5009EC99D /* KTGoodsYouLikeCell.m in Sources */,
 				26F2A11E2196AE5A00841767 /* DCCheckRegular.m in Sources */,
+				26F3382C21AE930000E725F1 /* KTCenterItemCell.m in Sources */,
 				268FF91A219EB020002F7A32 /* KTNewWelfareCell.m in Sources */,
 				26F2A0E52196AE5A00841767 /* XWFilterAnimator+XWFlash.m in Sources */,
 				26F2A10A2196AE5A00841767 /* JKDBModel.m in Sources */,
@@ -1549,6 +1580,7 @@
 				26F2A1062196AE5A00841767 /* CitiesDataTool.m in Sources */,
 				26F2A1262196AE5A00841767 /* UIImageView+DCExtension.m in Sources */,
 				268FF913219D1434002F7A32 /* KTGrideItemCell.m in Sources */,
+				26F3382F21AEC50B00E725F1 /* KTStateItem.m in Sources */,
 				261CCA33219FFEB2009D1E04 /* KTCountDownHeadView.m in Sources */,
 				2611E5A421A3E0720026B7F0 /* KTExceedApplianceCell.m in Sources */,
 				26F2A1022196AE5A00841767 /* ChooseLocationView.m in Sources */,
