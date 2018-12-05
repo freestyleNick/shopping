@@ -41,8 +41,15 @@
     
     if (_grideItem.iconImage.length == 0) return;
     
-    [self.itemImage sd_setImageWithURL:[NSURL URLWithString:grideItem.iconImage] placeholderImage:[UIImage imageNamed:@"default_49_11"]];
-    
+//    [self.itemImage sd_setImageWithURL:[NSURL URLWithString:grideItem.iconImage] placeholderImage:[UIImage imageNamed:@"default_49_11"]];
+//    
+    if ([[_grideItem.iconImage substringToIndex:4] isEqualToString:@"http"]) {
+        
+        [_itemImage sd_setImageWithURL:[NSURL URLWithString:grideItem.iconImage]placeholderImage:[UIImage imageNamed:@"default_49_11"]];
+    }else{
+        _itemImage.image = [UIImage imageNamed:grideItem.iconImage];
+    }
+
 }
 
 @end

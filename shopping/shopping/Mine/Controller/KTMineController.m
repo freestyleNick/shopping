@@ -9,6 +9,9 @@
 #import "KTMineController.h"
 #import "KTMineHeaderView.h"
 #import "KTGridItem.h"
+#import "KTCenterItemCell.h"
+
+#import "KTCenterServiceCell.h"
 
 @interface KTMineController ()<UITableViewDelegate, UITableViewDataSource>
 /** tableView */
@@ -26,6 +29,9 @@
 
 @end
 
+static NSString * const KTCenterItemCellID = @"KTCenterItemCellID";
+static NSString * const KTCenterServiceCellID = @"KTCenterServiceCellID";
+
 @implementation KTMineController
 
 #pragma mark - initialize
@@ -33,13 +39,15 @@
     
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero];
-        _tableView.frame = CGRectMake(0, 0, ScreenW, ScreenH - KTabBarH - 49);
+        _tableView.frame = CGRectMake(0, -KStatusH, ScreenW, ScreenH - KTabBarH - 49);
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.showsVerticalScrollIndicator = NO;
         [self.view addSubview:_tableView];
         
+        [_tableView registerClass:[KTCenterItemCell class] forCellReuseIdentifier:KTCenterItemCellID];
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([KTCenterServiceCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:KTCenterServiceCellID];
     }
     return _tableView;
 }
@@ -78,9 +86,26 @@
     
     [self setUpData];
     
-//    self.tableView.backgroundColor = [UIColor grayColor];
+    [self setUpUI];
+    
+    [self setUpHeaderCenterView];
 }
 
+- (void)setUpUI {
+    
+    self.view.backgroundColor = KTBGColor;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.backgroundColor = KTBGColor;
+    self.tableView.tableFooterView = [UIView new];//去除分割线
+
+}
+#pragma mark - 初始化头部
+- (void)setUpHeaderCenterView{
+    
+    self.tableView.tableHeaderView = self.headerView;
+    self.headBgImageView.frame = self.headerView.bounds;
+    [self.headerView insertSubview:self.headBgImageView atIndex:0]; //将背景图片放到最底层
+}
 
 #pragma mark - 获取数据
 - (void)setUpData
@@ -90,16 +115,69 @@
 
 #pragma mark - datasoure
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    
+    if (indexPath.section == 0) {
+        KTCenterItemCell * itemCell = [tableView dequeueReusableCellWithIdentifier:KTCenterItemCellID forIndexPath:indexPath];
+        cell = itemCell;
+    }else if (indexPath.section == 1) {
+        KTCenterServiceCell * serCell = [tableView dequeueReusableCellWithIdentifier:KTCenterServiceCellID forIndexPath:indexPath];
+        serCell.serviceItemArray = [NSMutableArray arrayWithArray:_serviceItem];
+        cell = serCell;
+    }
+    return cell;
+}
+
+#pragma mark - delegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat height = 0;
+    if (indexPath.section == 0) {
+        height = 180;
+    }else if (indexPath.section == 1) {
+        height = 215;
+    }
+    return height;
+}
+
+#pragma mark - 滚动tableview 完毕之后
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+//    _topToolView.hidden = (scrollView.contentOffset.y < 0) ? YES : NO;
 //
-//
-//}
+//    _topToolView.backgroundColor = (scrollView.contentOffset.y > 64) ? RGB(0, 0, 0) : [UIColor clearColor];
+    
+    //图片高度
+    CGFloat imageHeight = self.headerView.dc_height;
+    //图片宽度
+    CGFloat imageWidth = ScreenW;
+    //图片上下偏移量
+    CGFloat imageOffsetY = scrollView.contentOffset.y;
+    //上移
+    if (imageOffsetY < 0) {
+        CGFloat totalOffset = imageHeight + ABS(imageOffsetY);
+        CGFloat f = totalOffset / imageHeight;
+        self.headBgImageView.frame = CGRectMake(-(imageWidth * f - imageWidth) * 0.5, imageOffsetY, imageWidth * f, totalOffset);
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:YES];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 
 @end

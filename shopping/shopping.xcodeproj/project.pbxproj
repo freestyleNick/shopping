@@ -168,6 +168,9 @@
 		26F3382F21AEC50B00E725F1 /* KTStateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3382E21AEC50B00E725F1 /* KTStateItem.m */; };
 		26F3383321AEC6E200E725F1 /* KTStateItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3383121AEC6E200E725F1 /* KTStateItemCell.m */; };
 		26F3383421AEC6E200E725F1 /* KTStateItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */; };
+		26F3383921AF967000E725F1 /* KTStateItemFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3383821AF967000E725F1 /* KTStateItemFooterView.m */; };
+		26F3383F21B00A2500E725F1 /* KTCenterServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F3383D21B00A2500E725F1 /* KTCenterServiceCell.m */; };
+		26F3384021B00A2500E725F1 /* KTCenterServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F3383E21B00A2500E725F1 /* KTCenterServiceCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -446,6 +449,11 @@
 		26F3383021AEC6E200E725F1 /* KTStateItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTStateItemCell.h; sourceTree = "<group>"; };
 		26F3383121AEC6E200E725F1 /* KTStateItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTStateItemCell.m; sourceTree = "<group>"; };
 		26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTStateItemCell.xib; sourceTree = "<group>"; };
+		26F3383721AF967000E725F1 /* KTStateItemFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTStateItemFooterView.h; sourceTree = "<group>"; };
+		26F3383821AF967000E725F1 /* KTStateItemFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTStateItemFooterView.m; sourceTree = "<group>"; };
+		26F3383C21B00A2500E725F1 /* KTCenterServiceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTCenterServiceCell.h; sourceTree = "<group>"; };
+		26F3383D21B00A2500E725F1 /* KTCenterServiceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTCenterServiceCell.m; sourceTree = "<group>"; };
+		26F3383E21B00A2500E725F1 /* KTCenterServiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KTCenterServiceCell.xib; sourceTree = "<group>"; };
 		483906F411061C2B18ED7D68 /* libPods-shopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542E4ADEAFB176F0898A4B18 /* Pods-shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		E5A0CEAE4C3D0112439AA958 /* Pods-shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-shopping/Pods-shopping.release.xcconfig"; sourceTree = "<group>"; };
@@ -740,14 +748,11 @@
 		26F29FF82196AD6500841767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				26F3383B21B00A0000E725F1 /* section1 */,
+				26F3383A21B009D400E725F1 /* section0 */,
 				26F3382521AE83F100E725F1 /* KTMineHeaderView.h */,
 				26F3382621AE83F100E725F1 /* KTMineHeaderView.m */,
 				26F3382821AE840100E725F1 /* KTMineHeaderView.xib */,
-				26F3382A21AE930000E725F1 /* KTCenterItemCell.h */,
-				26F3382B21AE930000E725F1 /* KTCenterItemCell.m */,
-				26F3383021AEC6E200E725F1 /* KTStateItemCell.h */,
-				26F3383121AEC6E200E725F1 /* KTStateItemCell.m */,
-				26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1362,6 +1367,30 @@
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
+		26F3383A21B009D400E725F1 /* section0 */ = {
+			isa = PBXGroup;
+			children = (
+				26F3382A21AE930000E725F1 /* KTCenterItemCell.h */,
+				26F3382B21AE930000E725F1 /* KTCenterItemCell.m */,
+				26F3383021AEC6E200E725F1 /* KTStateItemCell.h */,
+				26F3383121AEC6E200E725F1 /* KTStateItemCell.m */,
+				26F3383221AEC6E200E725F1 /* KTStateItemCell.xib */,
+				26F3383721AF967000E725F1 /* KTStateItemFooterView.h */,
+				26F3383821AF967000E725F1 /* KTStateItemFooterView.m */,
+			);
+			path = section0;
+			sourceTree = "<group>";
+		};
+		26F3383B21B00A0000E725F1 /* section1 */ = {
+			isa = PBXGroup;
+			children = (
+				26F3383C21B00A2500E725F1 /* KTCenterServiceCell.h */,
+				26F3383D21B00A2500E725F1 /* KTCenterServiceCell.m */,
+				26F3383E21B00A2500E725F1 /* KTCenterServiceCell.xib */,
+			);
+			path = section1;
+			sourceTree = "<group>";
+		};
 		43940F1A783FF591E4AC2F33 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1435,6 +1464,7 @@
 				26623315219AB8C20064A87E /* ShopItem.plist in Resources */,
 				2662331D219AB8C20064A87E /* CommentBadData.plist in Resources */,
 				26F29FEC21968C0A00841767 /* LaunchScreen.storyboard in Resources */,
+				26F3384021B00A2500E725F1 /* KTCenterServiceCell.xib in Resources */,
 				26F2A1032196AE5A00841767 /* AddressTableViewCell.xib in Resources */,
 				2662332A219AB8C20064A87E /* loading2.gif in Resources */,
 				26F2A1132196AE5A00841767 /* sqr_line@2x.png in Resources */,
@@ -1582,6 +1612,7 @@
 				268FF913219D1434002F7A32 /* KTGrideItemCell.m in Sources */,
 				26F3382F21AEC50B00E725F1 /* KTStateItem.m in Sources */,
 				261CCA33219FFEB2009D1E04 /* KTCountDownHeadView.m in Sources */,
+				26F3383F21B00A2500E725F1 /* KTCenterServiceCell.m in Sources */,
 				2611E5A421A3E0720026B7F0 /* KTExceedApplianceCell.m in Sources */,
 				26F2A1022196AE5A00841767 /* ChooseLocationView.m in Sources */,
 				26F2A0E02196AE5A00841767 /* SDBrowserImageView.m in Sources */,
@@ -1625,6 +1656,7 @@
 				26F2A1162196AE5A00841767 /* YBRectConst.m in Sources */,
 				26F2A0E92196AE5A00841767 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				26F2A0FE2196AE5A00841767 /* GQGesVCTransition.m in Sources */,
+				26F3383921AF967000E725F1 /* KTStateItemFooterView.m in Sources */,
 				26F2A1232196AE5A00841767 /* NSObject+DCNull.m in Sources */,
 				26F2A0F32196AE5A00841767 /* XWCoolAnimator+XWPortal.m in Sources */,
 				26F2A0D72196AE5A00841767 /* DCZuoWenRightButton.m in Sources */,

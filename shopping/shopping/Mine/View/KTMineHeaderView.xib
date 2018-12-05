@@ -10,14 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KTMineHeaderView">
-            <connections>
-                <outlet property="myIconImage" destination="7EV-w4-qHe" id="c0t-aL-hXc"/>
-                <outlet property="seeMyVipBtn" destination="FIl-re-wg9" id="Ddb-QX-nPS"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KTMineHeaderView">
             <rect key="frame" x="0.0" y="0.0" width="521" height="374"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -81,7 +76,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好的太简单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqe-JG-qqB">
                             <rect key="frame" x="89" y="14" width="76.5" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="G6" translatesAutoresizingMaskIntoConstraints="NO" id="ax6-gZ-Mik">
@@ -103,12 +98,13 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIl-re-wg9">
-                            <rect key="frame" x="79" y="36" width="70" height="22"/>
+                            <rect key="frame" x="87" y="36" width="70" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="70" id="J4B-Vm-iXT"/>
                                 <constraint firstAttribute="height" constant="22" id="mrK-Do-K0v"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                             <state key="normal" title="查看会员" image="G1Price">
                                 <color key="titleColor" red="0.59840035076146281" green="0.43793222015976563" blue="0.96930998563766479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
@@ -126,7 +122,7 @@
                         <constraint firstItem="Oqe-JG-qqB" firstAttribute="top" secondItem="7EV-w4-qHe" secondAttribute="top" constant="4" id="Xtk-RQ-YxL"/>
                         <constraint firstItem="ax6-gZ-Mik" firstAttribute="leading" secondItem="Oqe-JG-qqB" secondAttribute="trailing" constant="10" id="YNK-z1-pIY"/>
                         <constraint firstItem="7EV-w4-qHe" firstAttribute="centerY" secondItem="BjL-KH-UYE" secondAttribute="centerY" id="ZxK-GR-Ial"/>
-                        <constraint firstItem="FIl-re-wg9" firstAttribute="leading" secondItem="7EV-w4-qHe" secondAttribute="trailing" id="kk4-ff-lj1"/>
+                        <constraint firstItem="FIl-re-wg9" firstAttribute="leading" secondItem="7EV-w4-qHe" secondAttribute="trailing" constant="8" id="kk4-ff-lj1"/>
                         <constraint firstItem="7EV-w4-qHe" firstAttribute="leading" secondItem="2E6-v5-IAy" secondAttribute="leading" constant="25" id="sKn-8R-5eb"/>
                         <constraint firstItem="7EV-w4-qHe" firstAttribute="top" secondItem="2E6-v5-IAy" secondAttribute="top" constant="10" id="tt7-eP-TsR"/>
                     </constraints>
@@ -144,6 +140,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="myIconImage" destination="7EV-w4-qHe" id="JQM-Iz-WFe"/>
+                <outlet property="seeMyVipBtn" destination="FIl-re-wg9" id="e6K-1U-xXs"/>
+            </connections>
             <point key="canvasLocation" x="13.6" y="0.89955022488755632"/>
         </view>
     </objects>

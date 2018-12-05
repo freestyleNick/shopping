@@ -23,6 +23,11 @@
     [DCSpeedy dc_chageControlCircularWith:_seeMyVipBtn AndSetCornerRadius:10 SetBorderWidth:1 SetBorderColor:_seeMyVipBtn.backgroundColor canMasksToBounds:YES];
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+}
+
 - (IBAction)seeMyheadBtnClick:(id)sender {
     NSLog(@"%s",__func__);
 }
